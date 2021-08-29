@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Merriweather:wght@700&display=swap");
+.container {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+
 h1 {
   font-family: 'Merriweather', sans-serif;
   color: white;
@@ -12,6 +18,80 @@ p {
   line-height: 30px;
   color: #213757;
   opacity: 70%;
+}
+
+.hero__section {
+  background: url("https://res.cloudinary.com/achraf-dev/image/upload/v1630269985/hero_buymwb.jpg");
+  min-height: 800px;
+  background-size: cover;
+}
+
+.hero__section .hero__content {
+  margin-top: 220px;
+  max-width: 600px;
+}
+
+.hero__section .hero__content p {
+  color: white;
+  font-size: 20px;
+  opacity: 100%;
+  font-weight: 400;
+  margin: 35px 0 70px 0;
+  width: 80%;
+}
+
+.hero__section .hero__content .newsletter__form {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__section .hero__content .newsletter__form input {
+  font-family: inherit;
+  font-size: 17px;
+  width: 320px;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+}
+
+.hero__section .hero__content .newsletter__form input::-webkit-input-placeholder {
+  opacity: 80%;
+}
+
+.hero__section .hero__content .newsletter__form input:-ms-input-placeholder {
+  opacity: 80%;
+}
+
+.hero__section .hero__content .newsletter__form input::-ms-input-placeholder {
+  opacity: 80%;
+}
+
+.hero__section .hero__content .newsletter__form input::placeholder {
+  opacity: 80%;
+}
+
+.hero__section .hero__content .newsletter__form .primary__button {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #34b9e0;
+  border: none;
+  border-radius: 4px;
+  padding: 0 25px;
+  margin-left: 13px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hero__section .hero__content .newsletter__form .primary__button:hover {
+  opacity: 90%;
 }
 
 * {
@@ -31,7 +111,5 @@ p {
 .app__container .wrapper {
   min-width: 250px;
   max-width: 2000px;
-  width: 80%;
-  margin: auto;
 }
 /*# sourceMappingURL=default.css.map */

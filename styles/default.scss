@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Merriweather:wght@700&display=swap');
 @import './variables';
 @import './global';
+//styles
+@import '../components/Hero/hero';
 
 * {
   margin: 0;
@@ -16,7 +18,5 @@
   .wrapper {
     min-width: 250px;
     max-width: 2000px;
-    width: 80%;
-    margin: auto;
   }
 }

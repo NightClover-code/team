@@ -1,0 +1,51 @@
+.hero__section {
+  background: url('https://res.cloudinary.com/achraf-dev/image/upload/v1630269985/hero_buymwb.jpg');
+  min-height: 800px;
+  background-size: cover;
+  .hero__content {
+    margin-top: 220px;
+    max-width: 600px;
+    p {
+      color: white;
+      font-size: 20px;
+      opacity: 100%;
+      font-weight: 400;
+      margin: 35px 0 70px 0;
+      width: 80%;
+    }
+    .newsletter__form {
+      height: 56px;
+      display: flex;
+      input {
+        font-family: inherit;
+        font-size: 17px;
+        width: 320px;
+        height: 100%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        padding: 0 15px;
+        &::placeholder {
+          opacity: 80%;
+        }
+      }
+      .primary__button {
+        height: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: inherit;
+        background-color: $blue;
+        border: none;
+        border-radius: 4px;
+        padding: 0 25px;
+        margin-left: 13px;
+        color: white;
+        cursor: pointer;
+        transition: opacity 0.2s ease-in-out;
+        &:hover {
+          opacity: 90%;
+        }
+      }
+    }
+  }
+}
