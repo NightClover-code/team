@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Merriweather:wght@700&display=swap');
+@import './variables';
+@import './global';
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +11,12 @@
 .app__container {
   min-height: 100vh;
   overflow: hidden;
-  font-size: 16px;
-  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-family: 'Cabin', sans-serif;
   .wrapper {
-    //   min-width: 250px;
-    //   max-width: 2000px;
-    //   width: 80%;
-    //   margin: auto;
+    min-width: 250px;
+    max-width: 2000px;
+    width: 80%;
+    margin: auto;
   }
 }

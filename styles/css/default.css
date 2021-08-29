@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Merriweather:wght@700&display=swap");
+h1 {
+  font-family: 'Merriweather', sans-serif;
+  color: white;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  line-height: 30px;
+  color: #213757;
+  opacity: 70%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +24,14 @@
 .app__container {
   min-height: 100vh;
   overflow: hidden;
-  font-size: 16px;
-  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.app__container .wrapper {
+  min-width: 250px;
+  max-width: 2000px;
+  width: 80%;
+  margin: auto;
 }
 /*# sourceMappingURL=default.css.map */

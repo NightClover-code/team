@@ -11,6 +11,7 @@ The designs were created to the following widths:
 
 - blue: #34B9E0
 - dark-blue: #213757;
+- off-white: #F5F7FA;
 
 ## Typography
 
