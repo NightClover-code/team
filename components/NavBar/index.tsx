@@ -1,11 +1,14 @@
+import Link from 'next/link';
 import { Logo } from '../Icons';
 
 const NavBar = () => {
   return (
     <nav>
-      <div className="logo__container">
-        <Logo />
-      </div>
+      <Link href="/" passHref>
+        <div className="logo__container">
+          <Logo />
+        </div>
+      </Link>
       <div className="nav__items">
         <div className="nav__list">
           <ul>

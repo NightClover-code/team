@@ -17,7 +17,7 @@ p {
   font-weight: 400;
   line-height: 30px;
   color: #213757;
-  opacity: 70%;
+  opacity: 80%;
 }
 
 .primary__button {
@@ -118,6 +118,7 @@ nav {
 nav .logo__container {
   width: 71px;
   height: 31px;
+  cursor: pointer;
 }
 
 nav .nav__items {
@@ -179,6 +180,44 @@ nav .nav__items button:hover {
   opacity: 1;
 }
 
+.dashboard__section {
+  margin-top: 100px;
+  height: 100vh;
+}
+
+.dashboard__section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard__section .container .content {
+  max-width: 500px;
+}
+
+.dashboard__section .container .content h1 {
+  color: #213757;
+}
+
+.dashboard__section .container .content p {
+  margin: 30px 0 35px 0;
+}
+
+.dashboard__section .container .content .learn__more {
+  cursor: pointer;
+}
+
+.dashboard__section .container .content .learn__more span {
+  color: #34b9e0;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dashboard__section .container .mockup__container {
+  position: relative;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -191,6 +230,7 @@ nav .nav__items button:hover {
   overflow: hidden;
   font-size: 18px;
   font-family: 'Cabin', sans-serif;
+  background-color: #f5f7fa;
 }
 
 .app__container .wrapper {

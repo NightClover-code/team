@@ -1,5 +1,6 @@
 //importing components
 import { NextPage } from 'next';
+import DashBoard from '../components/Dashboard';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 
@@ -9,6 +10,7 @@ const HomePage: NextPage = () => {
       <div className="wrapper">
         <Header />
         <Hero />
+        <DashBoard />
       </div>
     </div>
   );

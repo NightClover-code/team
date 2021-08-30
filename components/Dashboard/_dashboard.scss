@@ -1,0 +1,28 @@
+.dashboard__section {
+  margin-top: 100px;
+  height: 100vh;
+  .container {
+    display: flex;
+    .content {
+      max-width: 500px;
+      h1 {
+        color: $dark-blue;
+      }
+      p {
+        margin: 30px 0 35px 0;
+      }
+      .learn__more {
+        cursor: pointer;
+        span {
+          color: $blue;
+          margin-right: 10px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+    .mockup__container {
+      position: relative;
+    }
+  }
+}
