@@ -20,6 +20,23 @@ p {
   opacity: 70%;
 }
 
+.primary__button {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.primary__button:hover {
+  opacity: 90%;
+}
+
 .hero__section {
   background: url("https://res.cloudinary.com/achraf-dev/image/upload/v1630269985/hero_buymwb.jpg");
   min-height: 800px;
@@ -74,24 +91,10 @@ p {
   opacity: 80%;
 }
 
-.hero__section .hero__content .newsletter__form .primary__button {
-  height: 100%;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: inherit;
+.hero__section .hero__content .newsletter__form button {
   background-color: #34b9e0;
-  border: none;
-  border-radius: 4px;
   padding: 0 25px;
   margin-left: 13px;
-  color: white;
-  cursor: pointer;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.hero__section .hero__content .newsletter__form .primary__button:hover {
-  opacity: 90%;
 }
 
 header {
@@ -102,8 +105,11 @@ header {
   background-color: transparent;
 }
 
+nav {
+  margin-top: 35px;
+}
+
 nav .logo__container {
-  position: relative;
   width: 71px;
   height: 31px;
 }
