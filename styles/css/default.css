@@ -181,14 +181,13 @@ nav .nav__items button:hover {
 }
 
 .dashboard__section {
-  margin-top: 100px;
+  position: relative;
+  margin-top: 400px;
   height: 100vh;
 }
 
 .dashboard__section .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  overflow: visible;
 }
 
 .dashboard__section .container .content {
@@ -205,6 +204,8 @@ nav .nav__items button:hover {
 
 .dashboard__section .container .content .learn__more {
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .dashboard__section .container .content .learn__more span {
@@ -214,8 +215,24 @@ nav .nav__items button:hover {
   font-weight: 600;
 }
 
+.dashboard__section .container .content .learn__more svg {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.dashboard__section .container .content .learn__more:hover {
+  opacity: 80%;
+}
+
+.dashboard__section .container .content .learn__more:hover svg {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
 .dashboard__section .container .mockup__container {
-  position: relative;
+  position: absolute;
+  right: -550px;
+  top: -250px;
 }
 
 * {

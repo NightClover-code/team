@@ -1,8 +1,9 @@
 .dashboard__section {
-  margin-top: 100px;
+  position: relative;
+  margin-top: 400px;
   height: 100vh;
   .container {
-    display: flex;
+    overflow: visible;
     .content {
       max-width: 500px;
       h1 {
@@ -13,16 +14,28 @@
       }
       .learn__more {
         cursor: pointer;
+        transition: all 0.2s ease-in-out;
         span {
           color: $blue;
           margin-right: 10px;
           font-size: 16px;
           font-weight: 600;
         }
+        svg {
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover {
+          opacity: 80%;
+          svg {
+            transform: translateX(10px);
+          }
+        }
       }
     }
     .mockup__container {
-      position: relative;
+      position: absolute;
+      right: -550px;
+      top: -250px;
     }
   }
 }
