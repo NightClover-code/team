@@ -94,6 +94,20 @@ p {
   opacity: 90%;
 }
 
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+nav .logo__container {
+  position: relative;
+  width: 71px;
+  height: 31px;
+}
+
 * {
   margin: 0;
   padding: 0;
