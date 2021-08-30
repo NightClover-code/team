@@ -5,18 +5,6 @@
   margin: auto;
 }
 
-.content {
-  max-width: 500px;
-}
-
-.content h1 {
-  color: #213757;
-}
-
-.content p {
-  margin: 30px 0 35px 0;
-}
-
 h1 {
   font-family: 'Merriweather', sans-serif;
   color: white;
@@ -206,6 +194,24 @@ nav .nav__items button:hover {
   position: absolute;
   right: -550px;
   top: -250px;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.content h1 {
+  color: #213757;
+}
+
+.content p {
+  margin: 30px 0 35px 0;
 }
 
 .learn__more {
