@@ -1,26 +1,23 @@
-import { ArrowRightIcon, Mockup } from '../Icons';
+import { Mockup } from '../Icons';
+import Content from '../Content';
 
-const DashBoard = () => (
-  <section className="dashboard__section">
-    <div className="container">
-      <div className="content">
-        <h1>Your hub for teamwork</h1>
-        <p>
-          Project discussions, important documents, free food anoucements; they
-          all live tidely together in Team. With your team and information in
-          one easily searchable place, collaborating online is as easy as
-          collaborating in person.
-        </p>
-        <div className="learn__more">
-          <span>Learn more</span>
-          <ArrowRightIcon />
+const DashBoard = () => {
+  const config = {
+    title: 'Your hub for teamwork',
+    description:
+      'Project discussions, important documents, free food anoucements; they all live tidely together in Team. With your team and information in one easily searchable place, collaborating online is as easy as collaborating in person.',
+  };
+
+  return (
+    <section className="dashboard__section">
+      <div className="container">
+        <Content {...config} />
+        <div className="mockup__container">
+          <Mockup />
         </div>
       </div>
-      <div className="mockup__container">
-        <Mockup />
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default DashBoard;

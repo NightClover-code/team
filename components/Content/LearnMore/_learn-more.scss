@@ -1,0 +1,19 @@
+.learn__more {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  span {
+    color: $blue;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  svg {
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    opacity: 80%;
+    svg {
+      transform: translateX(10px);
+    }
+  }
+}

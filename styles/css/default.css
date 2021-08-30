@@ -5,6 +5,18 @@
   margin: auto;
 }
 
+.content {
+  max-width: 500px;
+}
+
+.content h1 {
+  color: #213757;
+}
+
+.content p {
+  margin: 30px 0 35px 0;
+}
+
 h1 {
   font-family: 'Merriweather', sans-serif;
   color: white;
@@ -190,49 +202,37 @@ nav .nav__items button:hover {
   overflow: visible;
 }
 
-.dashboard__section .container .content {
-  max-width: 500px;
+.dashboard__section .container .mockup__container {
+  position: absolute;
+  right: -550px;
+  top: -250px;
 }
 
-.dashboard__section .container .content h1 {
-  color: #213757;
-}
-
-.dashboard__section .container .content p {
-  margin: 30px 0 35px 0;
-}
-
-.dashboard__section .container .content .learn__more {
+.learn__more {
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.dashboard__section .container .content .learn__more span {
+.learn__more span {
   color: #34b9e0;
   margin-right: 10px;
   font-size: 16px;
   font-weight: 600;
 }
 
-.dashboard__section .container .content .learn__more svg {
+.learn__more svg {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.dashboard__section .container .content .learn__more:hover {
+.learn__more:hover {
   opacity: 80%;
 }
 
-.dashboard__section .container .content .learn__more:hover svg {
+.learn__more:hover svg {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
-}
-
-.dashboard__section .container .mockup__container {
-  position: absolute;
-  right: -550px;
-  top: -250px;
 }
 
 * {
