@@ -29,8 +29,8 @@ p {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .primary__button:hover {
@@ -107,11 +107,76 @@ header {
 
 nav {
   margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav .logo__container {
   width: 71px;
   height: 31px;
+}
+
+nav .nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav__items .nav__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav .nav__items .nav__list ul li {
+  position: relative;
+  color: white;
+  margin: 0 25px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+nav .nav__items .nav__list ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  height: 2px;
+  background-color: white;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  width: 100%;
+}
+
+nav .nav__items .nav__list ul li:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+}
+
+nav .nav__items button {
+  padding: 12px 18px;
+  background-color: rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  margin-left: 20px;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+}
+
+nav .nav__items button:hover {
+  background-color: #34b9e0;
+  border-color: #34b9e0;
+  opacity: 1;
 }
 
 * {

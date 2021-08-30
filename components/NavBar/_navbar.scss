@@ -1,7 +1,54 @@
 nav {
   margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
   .logo__container {
     width: 71px;
     height: 31px;
+  }
+  .nav__items {
+    display: flex;
+    align-items: center;
+    .nav__list ul {
+      display: flex;
+      list-style: none;
+      li {
+        position: relative;
+        color: white;
+        margin: 0 25px;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -3px;
+          transform: translateX(-50%) scaleX(0);
+          height: 2px;
+          background-color: white;
+          transition: all 0.25s;
+          width: 100%;
+        }
+        &:hover {
+          &::after {
+            transform: translateX(-50%) scaleX(1);
+          }
+        }
+      }
+    }
+    button {
+      padding: 12px 18px;
+      background-color: rgba(0, 0, 0, 0.15);
+      font-family: inherit;
+      margin-left: 20px;
+      letter-spacing: 0.15px;
+      cursor: pointer;
+      &:hover {
+        background-color: $blue;
+        border-color: $blue;
+        opacity: 1;
+      }
+    }
   }
 }

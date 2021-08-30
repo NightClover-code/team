@@ -5,6 +5,8 @@ const NavBar = () => {
     <nav>
       <div className="logo__container">
         <Logo />
+      </div>
+      <div className="nav__items">
         <div className="nav__list">
           <ul>
             <li>Products</li>
@@ -13,6 +15,7 @@ const NavBar = () => {
             <li>Login</li>
           </ul>
         </div>
+        <button className="primary__button">Get Access</button>
       </div>
     </nav>
   );
