@@ -1,10 +1,12 @@
 import Image from 'next/image';
+import { StarsIcon } from '../../Icons';
 
 export interface CardProps {
   description: string;
   imgSource: string;
   author: string;
   position: string;
+  imgPosition: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -12,19 +14,23 @@ const Card: React.FC<CardProps> = ({
   imgSource,
   author,
   position,
+  imgPosition,
 }) => {
   return (
     <div className="testimonials__card">
-      <div className="stars__container"></div>
+      <div className="stars__container">
+        <StarsIcon />
+      </div>
       <p>{description}</p>
       <div className="author__container">
         <div className="avatar__container">
-          {/* <Image
+          <Image
             src={imgSource}
             alt="testimonial-avatar"
-            width="56"
-            height="56"
-          /> */}
+            layout="fill"
+            objectFit="cover"
+            objectPosition={imgPosition}
+          />
         </div>
         <div className="author__content">
           <h4>{author}</h4>

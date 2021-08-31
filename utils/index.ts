@@ -27,6 +27,7 @@ export const testimonialCards: CardProps[] = [
       'https://res.cloudinary.com/achraf-dev/image/upload/v1630445337/jurica-koletic-7YVZYZeITc8-unsplash_qied5b.jpg',
     author: 'Esther Howard',
     position: 'CEO at Rustol Inc.',
+    imgPosition: '0 0',
   },
   {
     description: `Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus.consectetur nisi, ac interdum elit.`,
@@ -34,6 +35,7 @@ export const testimonialCards: CardProps[] = [
       'https://res.cloudinary.com/achraf-dev/image/upload/v1630445342/rachel-mcdermott-0fN7Fxv1eWA-unsplash_xn19tv.jpg',
     author: 'Jane Cooper',
     position: 'CEO at Coca-cola',
+    imgPosition: '',
   },
   {
     description: `consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue`,
@@ -41,6 +43,7 @@ export const testimonialCards: CardProps[] = [
       'https://res.cloudinary.com/achraf-dev/image/upload/v1630445340/jack-finnigan-rriAI0nhcbc-unsplash_jklbin.jpg',
     author: 'Guy Hawkins',
     position: 'Data Scientist at Mamba Inc.',
+    imgPosition: '',
   },
   {
     description: `Consequat voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.`,
@@ -48,5 +51,6 @@ export const testimonialCards: CardProps[] = [
       'https://res.cloudinary.com/achraf-dev/image/upload/v1630445346/albert-dera-ILip77SbmOE-unsplash_ce1cv3.jpg',
     author: 'Robert Fox',
     position: 'Biochemicals Engineer',
+    imgPosition: '0 0',
   },
 ];
