@@ -5,8 +5,8 @@ import { v4 as uuidv4 } from 'uuid';
 const Advantages = () => (
   <section className="advantages__section">
     <div className="container">
-      {advantagesConfig.map(_advantage => (
-        <Item {..._advantage} key={uuidv4()} />
+      {advantagesConfig.map((_advantage, index) => (
+        <Item {..._advantage} key={uuidv4()} order={index} />
       ))}
     </div>
   </section>

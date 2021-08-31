@@ -11,8 +11,7 @@ export const advantagesConfig: ItemProps[] = [
   },
   {
     title: 'Scheduling that actually works',
-    description: `Integrate a Team calendar with your favorite calendar app, be it Google Calendar or iCal.
-
+    description: `Integrate a Team calendar with your favorite calendar app, be it Google Calendar or iCal.    
     Each team member works with their favorite calendar, while all the date is synced with the master calendar.`,
     imgSource:
       'https://res.cloudinary.com/achraf-dev/image/upload/v1630269982/services-2_paxzny.jpg',
