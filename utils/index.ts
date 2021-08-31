@@ -1,4 +1,5 @@
 import { ItemProps } from '../components/Advantages/Item';
+import { CardProps } from '../components/Testimonials/Card';
 
 export const advantagesConfig: ItemProps[] = [
   {
@@ -16,5 +17,32 @@ export const advantagesConfig: ItemProps[] = [
     imgSource:
       'https://res.cloudinary.com/achraf-dev/image/upload/v1630269982/services-2_paxzny.jpg',
     imgAlt: 'Man working in the office',
+  },
+];
+
+export const testimonialCards: CardProps[] = [
+  {
+    description: ``,
+    imgSource: '',
+    author: '',
+    position: '',
+  },
+  {
+    description: ``,
+    imgSource: '',
+    author: '',
+    position: '',
+  },
+  {
+    description: ``,
+    imgSource: '',
+    author: '',
+    position: '',
+  },
+  {
+    description: ``,
+    imgSource: '',
+    author: '',
+    position: '',
   },
 ];

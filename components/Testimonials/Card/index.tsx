@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-interface CardProps {
+export interface CardProps {
   description: string;
   imgSource: string;
   author: string;
@@ -19,12 +19,12 @@ const Card: React.FC<CardProps> = ({
       <p>{description}</p>
       <div className="author__container">
         <div className="avatar__container">
-          <Image
+          {/* <Image
             src={imgSource}
             alt="testimonial-avatar"
             width="56"
             height="56"
-          />
+          /> */}
         </div>
         <div className="author__content">
           <h4>{author}</h4>

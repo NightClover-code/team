@@ -1,6 +1,17 @@
 .testimonials__section {
-  h1 {
-    text-align: center;
-    color: $dark-blue;
+  .container {
+    overflow: visible;
+    h1 {
+      text-align: center;
+      color: $dark-blue;
+    }
+    .cards__grid {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      display: grid;
+      grid-template-columns: repeat(4, 370px);
+      grid-template-rows: 400px;
+      gap: 30px;
+    }
   }
 }
