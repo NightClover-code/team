@@ -4,6 +4,7 @@ import Advantages from '../components/Advantages';
 import DashBoard from '../components/Dashboard';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import Testimonials from '../components/Testimonials';
 
 const HomePage: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage: NextPage = () => {
         <Hero />
         <DashBoard />
         <Advantages />
+        <Testimonials />
       </div>
     </div>
   );

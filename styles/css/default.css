@@ -248,6 +248,11 @@ nav .nav__items button:hover {
           transform: translateX(10px);
 }
 
+.testimonials__section h1 {
+  text-align: center;
+  color: #213757;
+}
+
 * {
   margin: 0;
   padding: 0;
