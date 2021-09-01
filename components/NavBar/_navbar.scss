@@ -2,10 +2,13 @@ nav {
   margin-top: 35px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .logo__container {
     width: 71px;
     height: 31px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
   }
   .nav__items {
     display: flex;

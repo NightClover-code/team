@@ -1,5 +1,5 @@
 import Card from './Card';
-import { testimonialCards } from '../../utils';
+import { isEven, testimonialCards } from '../../utils';
 import { v4 as uuidv4 } from 'uuid';
 
 const Testimonials = () => {
@@ -12,7 +12,7 @@ const Testimonials = () => {
             <Card
               {...card}
               key={uuidv4()}
-              style={{ height: index % 2 === 0 ? '360px' : '' }}
+              style={{ height: isEven(index) ? '360px' : '' }}
             />
           ))}
         </div>

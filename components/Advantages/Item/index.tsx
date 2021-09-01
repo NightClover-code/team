@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { isEven } from '../../../utils';
 import Content from '../../Content';
 
 export interface ItemProps {
@@ -12,7 +13,7 @@ export interface ItemProps {
 const Item: React.FC<ItemProps> = props => {
   return (
     <div className="advantages__item">
-      {props.order! % 2 === 1 ? (
+      {isEven(props.order!) ? (
         <>
           <Content {...props} />
           <Image

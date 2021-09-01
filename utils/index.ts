@@ -54,3 +54,7 @@ export const testimonialCards: CardProps[] = [
     imgPosition: '0 0',
   },
 ];
+
+export const isEven = (n: number) => {
+  return n % 2 === 0;
+};
