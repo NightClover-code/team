@@ -269,7 +269,6 @@ nav .nav__items button:hover {
 
 .testimonials__section .container .cards__grid {
   margin-top: 100px;
-  margin-bottom: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (370px)[4];
@@ -277,6 +276,22 @@ nav .nav__items button:hover {
   -ms-grid-rows: 380px;
       grid-template-rows: 380px;
   gap: 30px;
+}
+
+.testimonials__section .container .arrows__container {
+  margin-top: 50px;
+  -ms-grid-columns: (42px)[2];
+      grid-template-columns: repeat(2, 42px);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 13px;
+}
+
+.testimonials__section .container .arrows__container .arrow {
+  cursor: pointer;
 }
 
 .testimonials__card {

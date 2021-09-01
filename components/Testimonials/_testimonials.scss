@@ -7,11 +7,20 @@
     }
     .cards__grid {
       margin-top: 100px;
-      margin-bottom: 100px;
       display: grid;
       grid-template-columns: repeat(4, 370px);
       grid-template-rows: 380px;
       gap: 30px;
+    }
+    .arrows__container {
+      margin-top: 50px;
+      grid-template-columns: repeat(2, 42px);
+      display: grid;
+      justify-content: flex-end;
+      gap: 13px;
+      .arrow {
+        cursor: pointer;
+      }
     }
   }
 }

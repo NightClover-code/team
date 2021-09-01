@@ -20,8 +20,12 @@ const Testimonials = () => {
           ))}
         </div>
         <div className="arrows__container">
-          <ArrowForward />
-          <ArrowBack />
+          <div className="arrow arrow__back">
+            <ArrowBack />
+          </div>
+          <div className="arrow arrow__forward">
+            <ArrowForward />
+          </div>
         </div>
       </div>
     </section>
