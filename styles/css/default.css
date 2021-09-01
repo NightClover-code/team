@@ -265,8 +265,8 @@ nav .nav__items button:hover {
   display: grid;
   -ms-grid-columns: (370px)[4];
       grid-template-columns: repeat(4, 370px);
-  -ms-grid-rows: 400px;
-      grid-template-rows: 400px;
+  -ms-grid-rows: 380px;
+      grid-template-rows: 380px;
   gap: 30px;
 }
 

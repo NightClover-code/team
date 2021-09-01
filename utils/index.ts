@@ -22,7 +22,7 @@ export const advantagesConfig: ItemProps[] = [
 
 export const testimonialCards: CardProps[] = [
   {
-    description: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
+    description: `Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus.consectetur nisi, ac interdum elit.`,
     imgSource:
       'https://res.cloudinary.com/achraf-dev/image/upload/v1630445337/jurica-koletic-7YVZYZeITc8-unsplash_qied5b.jpg',
     author: 'Esther Howard',
@@ -30,7 +30,7 @@ export const testimonialCards: CardProps[] = [
     imgPosition: '0 0',
   },
   {
-    description: `Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus.consectetur nisi, ac interdum elit.`,
+    description: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
     imgSource:
       'https://res.cloudinary.com/achraf-dev/image/upload/v1630445342/rachel-mcdermott-0fN7Fxv1eWA-unsplash_xn19tv.jpg',
     author: 'Jane Cooper',

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { CSSProperties } from 'react';
 import { StarsIcon } from '../../Icons';
 
 export interface CardProps {
@@ -7,6 +8,7 @@ export interface CardProps {
   author: string;
   position: string;
   imgPosition: string;
+  style?: CSSProperties;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -15,9 +17,10 @@ const Card: React.FC<CardProps> = ({
   author,
   position,
   imgPosition,
+  style,
 }) => {
   return (
-    <div className="testimonials__card">
+    <div className="testimonials__card" style={style}>
       <div className="stars__container">
         <StarsIcon />
       </div>

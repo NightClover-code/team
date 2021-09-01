@@ -8,8 +8,12 @@ const Testimonials = () => {
       <div className="container">
         <h1>What people say about Team</h1>
         <div className="cards__grid">
-          {testimonialCards.map(card => (
-            <Card {...card} key={uuidv4()} />
+          {testimonialCards.map((card, index) => (
+            <Card
+              {...card}
+              key={uuidv4()}
+              style={{ height: index % 2 === 0 ? '360px' : '' }}
+            />
           ))}
         </div>
       </div>
