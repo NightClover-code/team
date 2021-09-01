@@ -16,8 +16,8 @@ nav {
       li {
         position: relative;
         color: white;
-        margin: 0 25px;
-        font-size: 16px;
+        margin: 0 20px;
+        font-size: 15px;
         font-weight: 400;
         cursor: pointer;
         &::after {
@@ -40,11 +40,12 @@ nav {
     }
     button {
       padding: 12px 18px;
-      background-color: rgba(0, 0, 0, 0.15);
+      background-color: rgba(0, 0, 0, 0.2);
       font-family: inherit;
       margin-left: 20px;
       letter-spacing: 0.15px;
       cursor: pointer;
+      font-size: 15px;
       &:hover {
         background-color: $blue;
         border-color: $blue;
