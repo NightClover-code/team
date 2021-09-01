@@ -1,6 +1,9 @@
+//importing components
 import Card from './Card';
+//importing utils
 import { isEven, testimonialCards } from '../../utils';
 import { v4 as uuidv4 } from 'uuid';
+import { ArrowBack, ArrowForward } from '../Icons';
 
 const Testimonials = () => {
   return (
@@ -15,6 +18,10 @@ const Testimonials = () => {
               style={{ height: isEven(index) ? '360px' : '' }}
             />
           ))}
+        </div>
+        <div className="arrows__container">
+          <ArrowForward />
+          <ArrowBack />
         </div>
       </div>
     </section>

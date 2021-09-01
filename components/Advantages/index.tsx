@@ -1,5 +1,7 @@
-import { advantagesConfig } from '../../utils';
+//importing components
 import Item from './Item';
+//importing utils
+import { advantagesConfig } from '../../utils';
 import { v4 as uuidv4 } from 'uuid';
 
 const Advantages = () => (

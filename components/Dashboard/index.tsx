@@ -1,3 +1,4 @@
+//importing components
 import { Mockup } from '../Icons';
 import Content from '../Content';
 

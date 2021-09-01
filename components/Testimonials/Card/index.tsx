@@ -1,3 +1,4 @@
+//importing components
 import Image from 'next/image';
 import { CSSProperties } from 'react';
 import { StarsIcon } from '../../Icons';

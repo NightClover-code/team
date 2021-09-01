@@ -1,6 +1,8 @@
+//importing components
 import Image from 'next/image';
-import { isEven } from '../../../utils';
 import Content from '../../Content';
+//importing utils
+import { isEven } from '../../../utils';
 
 export interface ItemProps {
   title: string;
