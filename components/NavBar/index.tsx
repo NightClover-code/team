@@ -1,13 +1,18 @@
 //importing components
 import Link from 'next/link';
-import { Logo } from '../Icons';
+import Logo from '../Logo';
 
 const NavBar = () => {
+  const navLogoConfig = {
+    primaryColor: 'white',
+    secondaryColor: 'var(--blue)',
+  };
+
   return (
     <nav>
       <Link href="/" passHref>
         <div className="logo__container">
-          <Logo />
+          <Logo {...navLogoConfig} />
         </div>
       </Link>
       <div className="nav__items">

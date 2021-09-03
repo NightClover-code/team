@@ -16,7 +16,7 @@ h1 {
 p {
   font-weight: 400;
   line-height: 30px;
-  color: #213757;
+  color: var(--dark-blue);
   opacity: 80%;
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 .hero__section .hero__content .newsletter__form button {
-  background-color: #1ac5f9;
+  background-color: var(--blue);
   padding: 0 25px;
   margin-left: 13px;
 }
@@ -185,8 +185,8 @@ nav .nav__items button {
 }
 
 nav .nav__items button:hover {
-  background-color: #1ac5f9;
-  border-color: #1ac5f9;
+  background-color: var(--blue);
+  border-color: var(--blue);
   opacity: 1;
 }
 
@@ -224,7 +224,7 @@ nav .nav__items button:hover {
 }
 
 .content h1 {
-  color: #213757;
+  color: var(--dark-blue);
 }
 
 .content p {
@@ -238,7 +238,7 @@ nav .nav__items button:hover {
 }
 
 .learn__more span {
-  color: #1ac5f9;
+  color: var(--blue);
   margin-right: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -264,7 +264,7 @@ nav .nav__items button:hover {
 
 .testimonials__section .container h1 {
   text-align: center;
-  color: #213757;
+  color: var(--dark-blue);
 }
 
 .testimonials__section .container .cards__grid {
@@ -338,13 +338,13 @@ nav .nav__items button:hover {
 }
 
 .testimonials__card .author__container .author__content h4 {
-  color: #213757;
+  color: var(--dark-blue);
   line-height: 0.85;
 }
 
 .testimonials__card .author__container .author__content span {
   font-size: 14px;
-  color: #213757;
+  color: var(--dark-blue);
   opacity: 80%;
 }
 
@@ -360,11 +360,17 @@ nav .nav__items button:hover {
   overflow: hidden;
   font-size: 18px;
   font-family: 'Cabin', sans-serif;
-  background-color: #f5f7fa;
+  background-color: var(--off-white);
 }
 
 .app__container .wrapper {
   min-width: 250px;
   max-width: 2000px;
+}
+
+:root {
+  --blue: #1ac5f9;
+  --dark-blue: #213757;
+  --off-white: #f5f7fa;
 }
 /*# sourceMappingURL=default.css.map */

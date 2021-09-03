@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Merriweather:wght@700&display=swap');
-@import './variables';
 @import './global';
 //styles
 @import '../components/Hero/hero';
@@ -12,6 +11,7 @@
 @import '../components/Content/LearnMore/learn-more';
 @import '../components/Testimonials/testimonials';
 @import '../components/Testimonials/Card/card';
+@import '../components/Footer/footer';
 
 * {
   margin: 0;
@@ -24,9 +24,15 @@
   overflow: hidden;
   font-size: 18px;
   font-family: 'Cabin', sans-serif;
-  background-color: $off-white;
+  background-color: var(--off-white);
   .wrapper {
     min-width: 250px;
     max-width: 2000px;
   }
+}
+
+:root {
+  --blue: #1ac5f9;
+  --dark-blue: #213757;
+  --off-white: #f5f7fa;
 }

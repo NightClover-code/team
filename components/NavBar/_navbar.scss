@@ -50,8 +50,8 @@ nav {
       cursor: pointer;
       font-size: 15px;
       &:hover {
-        background-color: $blue;
-        border-color: $blue;
+        background-color: var(--blue);
+        border-color: var(--blue);
         opacity: 1;
       }
     }

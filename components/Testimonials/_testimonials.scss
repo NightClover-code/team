@@ -3,7 +3,7 @@
     overflow: visible;
     h1 {
       text-align: center;
-      color: $dark-blue;
+      color: var(--dark-blue);
     }
     .cards__grid {
       margin-top: 100px;

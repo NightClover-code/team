@@ -24,12 +24,12 @@
       margin-top: 5px;
       margin-left: 20px;
       h4 {
-        color: $dark-blue;
+        color: var(--dark-blue);
         line-height: 0.85;
       }
       span {
         font-size: 14px;
-        color: $dark-blue;
+        color: var(--dark-blue);
         opacity: 80%;
       }
     }
