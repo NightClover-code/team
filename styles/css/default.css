@@ -37,6 +37,16 @@ p {
   opacity: 90%;
 }
 
+.caption,
+.footer__link {
+  color: var(--link);
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 170px;
+  padding-top: 20px;
+  opacity: 1;
+}
+
 .hero__section {
   background: url("https://res.cloudinary.com/achraf-dev/image/upload/v1630269985/hero_buymwb.jpg");
   min-height: 800px;
@@ -336,6 +346,86 @@ nav .nav__items button:hover {
   opacity: 80%;
 }
 
+footer {
+  background-color: rgba(33, 55, 87, 0.95);
+  padding: 60px 0;
+  min-height: 444px;
+  margin-top: 100px;
+}
+
+footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+footer .flex .footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .flex .footer__body ul {
+  margin-left: 120px;
+  list-style: none;
+}
+
+footer .flex .footer__body ul li {
+  line-height: normal;
+  margin-bottom: 8px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+footer .flex .footer__body ul li:hover {
+  color: var(--blue);
+}
+
+footer .flex .footer__body ul .title {
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  cursor: auto;
+}
+
+footer .flex .footer__body ul .title:hover {
+  color: white;
+}
+
+footer .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 150px;
+}
+
+footer .footer__bottom p {
+  color: var(--link);
+  opacity: 0.3;
+  font-size: 13px;
+}
+
+footer .footer__bottom .terms {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+footer .footer__bottom .terms:hover {
+  color: var(--blue);
+  opacity: 1;
+}
+
 .logo__container {
   width: 71px;
   height: 31px;
@@ -372,5 +462,6 @@ nav .nav__items button:hover {
   --blue: #1ac5f9;
   --dark-blue: #213757;
   --off-white: #f5f7fa;
+  --link: #ffffff99;
 }
 /*# sourceMappingURL=default.css.map */
