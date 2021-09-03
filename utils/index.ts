@@ -58,3 +58,8 @@ export const testimonialCards: CardProps[] = [
 export const isEven = (n: number) => {
   return n % 2 === 0;
 };
+
+export const defaultLogoConfig = {
+  primaryColor: 'white',
+  secondaryColor: 'var(--blue)',
+};

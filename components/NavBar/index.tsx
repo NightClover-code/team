@@ -3,16 +3,11 @@ import Link from 'next/link';
 import Logo from '../Logo';
 
 const NavBar = () => {
-  const navLogoConfig = {
-    primaryColor: 'white',
-    secondaryColor: 'var(--blue)',
-  };
-
   return (
     <nav>
       <Link href="/" passHref>
         <div className="logo__container">
-          <Logo {...navLogoConfig} />
+          <Logo />
         </div>
       </Link>
       <div className="nav__items">

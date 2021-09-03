@@ -1,8 +1,8 @@
 import { LogoIcon } from '../Icons';
 
 export interface LogoProps {
-  primaryColor: string;
-  secondaryColor: string;
+  primaryColor?: string;
+  secondaryColor?: string;
 }
 
 const Logo: React.FC<LogoProps> = props => {

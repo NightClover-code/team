@@ -1,9 +1,10 @@
+import { defaultLogoConfig } from '../../utils';
 import { LogoProps } from '../Logo';
 
 //icons
 export const LogoIcon: React.FC<LogoProps> = ({
-  primaryColor,
-  secondaryColor,
+  primaryColor = defaultLogoConfig.primaryColor,
+  secondaryColor = defaultLogoConfig.secondaryColor,
 }) => (
   <svg
     width="67"

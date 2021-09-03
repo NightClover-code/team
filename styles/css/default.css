@@ -118,18 +118,6 @@ nav {
           align-items: center;
 }
 
-nav .logo__container {
-  width: 71px;
-  height: 31px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 nav .nav__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,6 +334,18 @@ nav .nav__items button:hover {
   font-size: 14px;
   color: var(--dark-blue);
   opacity: 80%;
+}
+
+.logo__container {
+  width: 71px;
+  height: 31px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * {

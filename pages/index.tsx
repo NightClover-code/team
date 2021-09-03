@@ -2,6 +2,7 @@
 import { NextPage } from 'next';
 import Advantages from '../components/Advantages';
 import DashBoard from '../components/Dashboard';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Testimonials from '../components/Testimonials';
@@ -15,6 +16,7 @@ const HomePage: NextPage = () => {
         <DashBoard />
         <Advantages />
         <Testimonials />
+        <Footer />
       </div>
     </div>
   );
