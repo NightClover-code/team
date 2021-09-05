@@ -349,7 +349,7 @@ nav .nav__items button:hover {
 footer {
   background-color: rgba(33, 55, 87, 0.95);
   padding: 60px 0;
-  min-height: 444px;
+  height: 444px;
   margin-top: 100px;
 }
 
@@ -368,6 +368,7 @@ footer .flex .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 120px;
 }
 
 footer .flex .footer__body ul {
@@ -406,7 +407,6 @@ footer .footer__bottom {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 150px;
 }
 
 footer .footer__bottom p {
