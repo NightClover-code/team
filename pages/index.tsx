@@ -1,4 +1,4 @@
-//importing components
+//importing components & types
 import { NextPage } from 'next';
 import Advantages from '../components/Advantages';
 import DashBoard from '../components/Dashboard';

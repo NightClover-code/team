@@ -1,15 +1,12 @@
 //importing components
-import Link from 'next/link';
 import Logo from '../Logo';
 
 const NavBar = () => {
   return (
     <nav>
-      <Link href="/" passHref>
-        <div className="logo__container">
-          <Logo />
-        </div>
-      </Link>
+      <div className="logo__container">
+        <Logo />
+      </div>
       <div className="nav__items">
         <div className="nav__list">
           <ul>
