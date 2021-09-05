@@ -9,11 +9,11 @@ export interface LogoProps {
 
 const Logo: React.FC<LogoProps> = props => {
   return (
-    <div className="logo__container">
-      <Link href="/" passHref>
+    <Link href="/" passHref>
+      <div className="logo__container">
         <LogoIcon {...props} />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 
