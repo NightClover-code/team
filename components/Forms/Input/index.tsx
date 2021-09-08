@@ -7,7 +7,7 @@ interface FormInputProps {
 const FormInput: React.FC<FormInputProps> = ({ children, style }) => {
   return (
     <div className="form__input">
-      <input placeholder="email" type="email" style={style} />
+      <input placeholder="Email" type="email" style={style} />
       {children}
     </div>
   );

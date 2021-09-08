@@ -368,11 +368,11 @@ footer .flex .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 115px;
+  padding-bottom: 125px;
 }
 
 footer .flex .footer__body ul {
-  margin-left: 120px;
+  margin-left: 100px;
   list-style: none;
 }
 
@@ -448,28 +448,29 @@ footer .footer__bottom .terms:hover {
 
 .form__input input {
   font-family: inherit;
-  font-size: 17px;
-  width: 320px;
   border-radius: 5px;
   outline: none;
   border: none;
-  padding: 0 15px;
 }
 
 .form__input input::-webkit-input-placeholder {
-  opacity: 80%;
+  color: #fff;
+  opacity: 50%;
 }
 
 .form__input input:-ms-input-placeholder {
-  opacity: 80%;
+  color: #fff;
+  opacity: 50%;
 }
 
 .form__input input::-ms-input-placeholder {
-  opacity: 80%;
+  color: #fff;
+  opacity: 50%;
 }
 
 .form__input input::placeholder {
-  opacity: 80%;
+  color: #fff;
+  opacity: 50%;
 }
 
 * {

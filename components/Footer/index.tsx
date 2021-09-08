@@ -1,3 +1,4 @@
+import { newsletterInputConfig } from '../../utils';
 import FormInput from '../Forms/Input';
 import Logo from '../Logo';
 
@@ -35,7 +36,7 @@ const Footer = () => {
               <li className="footer__link special">
                 Subscribe to our newsletter
               </li>
-              <FormInput />
+              <FormInput style={newsletterInputConfig} />
             </ul>
           </div>
         </div>
