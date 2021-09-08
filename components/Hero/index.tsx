@@ -1,3 +1,6 @@
+import { heroInputConfig } from '../../utils';
+import FormInput from '../Forms/Input';
+
 const Hero = () => {
   return (
     <section className="hero__section">
@@ -9,7 +12,7 @@ const Hero = () => {
             simplify project management.
           </p>
           <form className="newsletter__form">
-            <input type="email" placeholder="Email" />
+            <FormInput style={heroInputConfig} />
             <button className="primary__button">Get Early Access</button>
           </form>
         </div>

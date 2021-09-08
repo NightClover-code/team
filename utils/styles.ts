@@ -11,3 +11,10 @@ export const newsletterInputConfig = {
   backgroundColor: 'rgba(255, 255, 255, 0.1)',
   color: '#fff',
 };
+
+export const heroInputConfig = {
+  fontSize: '17px',
+  width: '320px',
+  height: '100%',
+  padding: '0 15px',
+};

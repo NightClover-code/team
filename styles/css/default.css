@@ -76,29 +76,28 @@ p {
 
 .hero__section .hero__content .newsletter__form input {
   font-family: inherit;
-  font-size: 17px;
-  width: 320px;
-  height: 100%;
-  border-radius: 5px;
   outline: none;
   border: none;
-  padding: 0 15px;
 }
 
 .hero__section .hero__content .newsletter__form input::-webkit-input-placeholder {
   opacity: 80%;
+  color: var(--dark-blue);
 }
 
 .hero__section .hero__content .newsletter__form input:-ms-input-placeholder {
   opacity: 80%;
+  color: var(--dark-blue);
 }
 
 .hero__section .hero__content .newsletter__form input::-ms-input-placeholder {
   opacity: 80%;
+  color: var(--dark-blue);
 }
 
 .hero__section .hero__content .newsletter__form input::placeholder {
   opacity: 80%;
+  color: var(--dark-blue);
 }
 
 .hero__section .hero__content .newsletter__form button {
