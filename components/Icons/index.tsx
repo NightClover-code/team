@@ -1,3 +1,4 @@
+import { ArrowForwardProps } from './interfaces';
 import { defaultLogoConfig } from '../../utils';
 import { LogoProps } from '../Logo';
 
@@ -67,10 +68,13 @@ export const StarsIcon = () => (
   </svg>
 );
 
-export const ArrowForward = () => (
+export const ArrowForwardIcon: React.FC<ArrowForwardProps> = ({
+  width,
+  height,
+}) => (
   <svg
-    width="42"
-    height="47"
+    width={width || '42'}
+    height={height || '47'}
     viewBox="0 0 42 47"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +86,7 @@ export const ArrowForward = () => (
   </svg>
 );
 
-export const ArrowBack = () => (
+export const ArrowBackIcon = () => (
   <svg
     width="42"
     height="47"

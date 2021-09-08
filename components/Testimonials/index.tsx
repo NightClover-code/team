@@ -3,7 +3,7 @@ import Card from './Card';
 //importing utils
 import { isEven, testimonialCards } from '../../utils';
 import { v4 as uuidv4 } from 'uuid';
-import { ArrowBack, ArrowForward } from '../Icons';
+import { ArrowBackIcon, ArrowForwardIcon } from '../Icons';
 
 const Testimonials = () => {
   return (
@@ -21,10 +21,10 @@ const Testimonials = () => {
         </div>
         <div className="arrows__container">
           <div className="arrow arrow__back">
-            <ArrowBack />
+            <ArrowBackIcon />
           </div>
           <div className="arrow arrow__forward">
-            <ArrowForward />
+            <ArrowForwardIcon />
           </div>
         </div>
       </div>

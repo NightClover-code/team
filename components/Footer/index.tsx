@@ -1,6 +1,7 @@
-import { newsletterInputConfig } from '../../utils';
+import { arrowForwardConfig, newsletterInputConfig } from '../../utils';
 import FormInput from '../Forms/Input';
 import Logo from '../Logo';
+import { ArrowForwardIcon } from '../Icons';
 
 const Footer = () => {
   return (
@@ -36,7 +37,9 @@ const Footer = () => {
               <li className="footer__link special">
                 Subscribe to our newsletter
               </li>
-              <FormInput style={newsletterInputConfig} />
+              <FormInput style={newsletterInputConfig}>
+                <ArrowForwardIcon {...arrowForwardConfig} />
+              </FormInput>
             </ul>
           </div>
         </div>
