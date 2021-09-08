@@ -368,7 +368,7 @@ footer .flex .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 120px;
+  padding-bottom: 115px;
 }
 
 footer .flex .footer__body ul {
@@ -388,11 +388,19 @@ footer .flex .footer__body ul li:hover {
   color: var(--blue);
 }
 
+footer .flex .footer__body ul .special {
+  cursor: auto;
+}
+
+footer .flex .footer__body ul .special:hover {
+  color: var(--link);
+}
+
 footer .flex .footer__body ul .title {
   color: white;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   cursor: auto;
 }
 
@@ -436,6 +444,33 @@ footer .footer__bottom .terms:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.form__input {
+  font-family: inherit;
+  font-size: 17px;
+  width: 320px;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+}
+
+.form__input::-webkit-input-placeholder {
+  opacity: 80%;
+}
+
+.form__input:-ms-input-placeholder {
+  opacity: 80%;
+}
+
+.form__input::-ms-input-placeholder {
+  opacity: 80%;
+}
+
+.form__input::placeholder {
+  opacity: 80%;
 }
 
 * {

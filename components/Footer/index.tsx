@@ -1,3 +1,4 @@
+import FormInput from '../Forms/Input';
 import Logo from '../Logo';
 
 const Footer = () => {
@@ -31,7 +32,10 @@ const Footer = () => {
             </ul>
             <ul>
               <li className="title">Stay up to date</li>
-              <li className="footer__link">Subscribe to our newsletter</li>
+              <li className="footer__link special">
+                Subscribe to our newsletter
+              </li>
+              <FormInput />
             </ul>
           </div>
         </div>

@@ -9,7 +9,7 @@ footer {
     align-content: flex-start;
     .footer__body {
       display: flex;
-      padding-bottom: 120px;
+      padding-bottom: 115px;
       ul {
         margin-left: 120px;
         list-style: none;
@@ -22,11 +22,17 @@ footer {
             color: var(--blue);
           }
         }
+        .special {
+          cursor: auto;
+          &:hover {
+            color: var(--link);
+          }
+        }
         .title {
           color: white;
           font-size: 16px;
           line-height: 20px;
-          margin-bottom: 15px;
+          margin-bottom: 10px;
           cursor: auto;
           &:hover {
             color: white;
