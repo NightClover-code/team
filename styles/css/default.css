@@ -446,30 +446,29 @@ footer .footer__bottom .terms:hover {
           align-items: center;
 }
 
-.form__input {
+.form__input input {
   font-family: inherit;
   font-size: 17px;
   width: 320px;
-  height: 100%;
   border-radius: 5px;
   outline: none;
   border: none;
   padding: 0 15px;
 }
 
-.form__input::-webkit-input-placeholder {
+.form__input input::-webkit-input-placeholder {
   opacity: 80%;
 }
 
-.form__input:-ms-input-placeholder {
+.form__input input:-ms-input-placeholder {
   opacity: 80%;
 }
 
-.form__input::-ms-input-placeholder {
+.form__input input::-ms-input-placeholder {
   opacity: 80%;
 }
 
-.form__input::placeholder {
+.form__input input::placeholder {
   opacity: 80%;
 }
 
