@@ -59,6 +59,18 @@ p {
   max-width: 600px;
 }
 
+@media screen and (max-width: 500px) {
+  .hero__section .hero__content {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero__section .hero__content h1 {
+    font-size: 40px;
+  }
+}
+
 .hero__section .hero__content p {
   color: white;
   font-size: 20px;
@@ -68,17 +80,32 @@ p {
   width: 80%;
 }
 
+@media screen and (max-width: 700px) {
+  .hero__section .hero__content p {
+    margin: 20px 0 55px 0;
+  }
+}
+
 .hero__section .hero__content .newsletter__form {
-  height: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .hero__section .hero__content .newsletter__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
 }
 
 .hero__section .hero__content .newsletter__form input {
   font-family: inherit;
   outline: none;
   border: none;
+  height: 56px !important;
 }
 
 .hero__section .hero__content .newsletter__form input::-webkit-input-placeholder {
@@ -101,10 +128,24 @@ p {
   color: var(--dark-blue);
 }
 
+@media screen and (max-width: 700px) {
+  .hero__section .hero__content .newsletter__form input {
+    width: 100% !important;
+  }
+}
+
 .hero__section .hero__content .newsletter__form button {
   background-color: var(--blue);
   padding: 0 25px;
   margin-left: 13px;
+  height: 56px;
+}
+
+@media screen and (max-width: 700px) {
+  .hero__section .hero__content .newsletter__form button {
+    margin-left: 0;
+    margin-top: 15px;
+  }
 }
 
 header {
