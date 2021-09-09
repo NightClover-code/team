@@ -137,6 +137,12 @@ nav .nav__items {
           align-items: center;
 }
 
+@media screen and (max-width: 710px) {
+  nav .nav__items {
+    display: none;
+  }
+}
+
 nav .nav__items .nav__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +192,19 @@ nav .nav__items button:hover {
   background-color: var(--blue);
   border-color: var(--blue);
   opacity: 1;
+}
+
+nav .menu__icon__container {
+  display: none;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 710px) {
+  nav .menu__icon__container {
+    display: block;
+  }
 }
 
 .dashboard__section {

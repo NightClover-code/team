@@ -1,4 +1,5 @@
 //importing components
+import { MenuIcon } from '../Icons';
 import Logo from '../Logo';
 
 const NavBar = () => {
@@ -17,6 +18,9 @@ const NavBar = () => {
           </ul>
         </div>
         <button className="primary__button">Get Access</button>
+      </div>
+      <div className="menu__icon__container">
+        <MenuIcon />
       </div>
     </nav>
   );
