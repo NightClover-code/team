@@ -1,4 +1,4 @@
 export const arrowForwardConfig = {
-  width: '35',
-  height: '40',
+  width: '30',
+  height: '35',
 };

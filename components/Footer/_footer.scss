@@ -28,6 +28,24 @@ footer {
             color: var(--link);
           }
         }
+        .form__input {
+          position: relative;
+          svg {
+            position: absolute;
+            top: 18px;
+            right: 10px;
+            cursor: pointer;
+            path {
+              fill: rgba(255, 255, 255, 0.2);
+              transition: all 0.2s ease-in-out;
+            }
+            &:hover {
+              path {
+                fill: rgba(255, 255, 255, 0.8);
+              }
+            }
+          }
+        }
         .title {
           color: white;
           font-size: 16px;

@@ -396,6 +396,27 @@ footer .flex .footer__body ul .special:hover {
   color: var(--link);
 }
 
+footer .flex .footer__body ul .form__input {
+  position: relative;
+}
+
+footer .flex .footer__body ul .form__input svg {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  cursor: pointer;
+}
+
+footer .flex .footer__body ul .form__input svg path {
+  fill: rgba(255, 255, 255, 0.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .flex .footer__body ul .form__input svg:hover path {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
 footer .flex .footer__body ul .title {
   color: white;
   font-size: 16px;

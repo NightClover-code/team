@@ -37,9 +37,11 @@ const Footer = () => {
               <li className="footer__link special">
                 Subscribe to our newsletter
               </li>
-              <FormInput style={newsletterInputConfig}>
-                <ArrowForwardIcon {...arrowForwardConfig} />
-              </FormInput>
+              <form>
+                <FormInput style={newsletterInputConfig}>
+                  <ArrowForwardIcon {...arrowForwardConfig} />
+                </FormInput>
+              </form>
             </ul>
           </div>
         </div>
