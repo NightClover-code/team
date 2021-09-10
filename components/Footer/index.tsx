@@ -1,4 +1,6 @@
+//importing utils
 import { arrowForwardConfig, newsletterInputConfig } from '../../utils';
+//importing component
 import FormInput from '../Forms/Input';
 import Logo from '../Logo';
 import { ArrowForwardIcon } from '../Icons';
