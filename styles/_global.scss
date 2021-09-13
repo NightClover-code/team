@@ -10,6 +10,9 @@ h1 {
   font-size: 48px;
   line-height: 55px;
   font-weight: 700;
+  @media screen and (max-width: 850px) {
+    font-size: 40px !important;
+  }
 }
 
 p {
@@ -17,6 +20,10 @@ p {
   line-height: 30px;
   color: var(--dark-blue);
   opacity: 80%;
+  @media screen and (max-width: 850px) {
+    font-size: 17px;
+    line-height: 32px;
+  }
 }
 
 .primary__button {
