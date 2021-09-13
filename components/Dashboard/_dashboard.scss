@@ -1,9 +1,11 @@
 .dashboard__section {
-  margin-top: 400px;
-  height: 100vh;
+  margin: 400px 0;
   @media screen and (max-width: 850px) {
-    margin-top: 150px;
-    margin-bottom: 600px;
+    margin-top: 120px;
+    margin-bottom: 900px;
+  }
+  @media screen and (max-width: 450px) {
+    margin-bottom: 700px;
   }
   .container {
     position: relative;
@@ -24,15 +26,17 @@
         right: -950px;
       }
       @media screen and (max-width: 850px) {
-        top: 400px;
+        top: 500px;
         right: -550px;
       }
       @media screen and (max-width: 650px) {
         right: -750px;
       }
       @media screen and (max-width: 550px) {
-        top: 500px;
         right: -850px;
+      }
+      @media screen and (max-width: 450px) {
+        top: 500px;
       }
     }
   }

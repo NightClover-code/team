@@ -262,14 +262,19 @@ nav .menu__icon__container {
 }
 
 .dashboard__section {
-  margin-top: 400px;
-  height: 100vh;
+  margin: 400px 0;
 }
 
 @media screen and (max-width: 850px) {
   .dashboard__section {
-    margin-top: 150px;
-    margin-bottom: 600px;
+    margin-top: 120px;
+    margin-bottom: 900px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .dashboard__section {
+    margin-bottom: 700px;
   }
 }
 
@@ -315,7 +320,7 @@ nav .menu__icon__container {
 
 @media screen and (max-width: 850px) {
   .dashboard__section .container .mockup__container {
-    top: 400px;
+    top: 500px;
     right: -550px;
   }
 }
@@ -328,8 +333,13 @@ nav .menu__icon__container {
 
 @media screen and (max-width: 550px) {
   .dashboard__section .container .mockup__container {
-    top: 500px;
     right: -850px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .dashboard__section .container .mockup__container {
+    top: 500px;
   }
 }
 
@@ -394,12 +404,6 @@ nav .menu__icon__container {
 
 .content p {
   margin: 30px 0 35px 0;
-}
-
-@media screen and (max-width: 850px) {
-  .content {
-    text-align: center;
-  }
 }
 
 .learn__more {

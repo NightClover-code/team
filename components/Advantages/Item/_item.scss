@@ -9,17 +9,7 @@
     grid-template-rows: auto;
     margin-top: 100px;
   }
-  // img {
-  //   @media screen and (max-width: 850px) {
-  //     min-height: 650px;
-  //   }
-  //   @media screen and (max-width: 750px) {
-  //     min-height: 550px;
-  //   }
-  //   @media screen and (max-width: 650px) {
-  //     min-height: auto;
-  //   }
-  // }
+
   .content {
     @media screen and (max-width: 1300px) {
       width: 80%;
