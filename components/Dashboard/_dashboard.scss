@@ -1,13 +1,39 @@
 .dashboard__section {
-  position: relative;
   margin-top: 400px;
   height: 100vh;
+  @media screen and (max-width: 850px) {
+    margin-top: 150px;
+    margin-bottom: 600px;
+  }
   .container {
+    position: relative;
     overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 850px) {
+      flex-flow: column nowrap;
+    }
     .mockup__container {
       position: absolute;
       right: -550px;
-      top: -250px;
+      @media screen and (max-width: 1300px) {
+        right: -750px;
+      }
+      @media screen and (max-width: 1050px) {
+        right: -950px;
+      }
+      @media screen and (max-width: 850px) {
+        top: 400px;
+        right: -550px;
+      }
+      @media screen and (max-width: 650px) {
+        right: -750px;
+      }
+      @media screen and (max-width: 550px) {
+        top: 500px;
+        right: -850px;
+      }
     }
   }
 }
