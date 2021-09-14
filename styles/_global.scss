@@ -13,6 +13,9 @@ h1 {
   @media screen and (max-width: 850px) {
     font-size: 40px !important;
   }
+  @media screen and (max-width: 300px) {
+    font-size: 33px !important;
+  }
 }
 
 p {

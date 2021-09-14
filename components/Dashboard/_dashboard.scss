@@ -2,11 +2,9 @@
   margin: 400px 0;
   @media screen and (max-width: 850px) {
     margin-top: 120px;
-    margin-bottom: 900px;
+    margin-bottom: 800px;
   }
-  @media screen and (max-width: 450px) {
-    margin-bottom: 700px;
-  }
+
   .container {
     position: relative;
     overflow: visible;
@@ -26,7 +24,7 @@
         right: -950px;
       }
       @media screen and (max-width: 850px) {
-        top: 500px;
+        top: 300px;
         right: -550px;
       }
       @media screen and (max-width: 650px) {
@@ -36,7 +34,7 @@
         right: -850px;
       }
       @media screen and (max-width: 450px) {
-        top: 500px;
+        top: 460px;
       }
     }
   }
