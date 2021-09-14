@@ -11,6 +11,12 @@
       grid-template-columns: repeat(4, 370px);
       grid-template-rows: 380px;
       gap: 30px;
+      @media screen and (max-width: 450px) {
+        grid-template-columns: repeat(4, 300px);
+      }
+      @media screen and (max-width: 350px) {
+        grid-template-columns: repeat(4, 250px);
+      }
     }
     .arrows__container {
       margin-top: 50px;

@@ -459,6 +459,20 @@ nav .menu__icon__container {
   gap: 30px;
 }
 
+@media screen and (max-width: 450px) {
+  .testimonials__section .container .cards__grid {
+    -ms-grid-columns: (300px)[4];
+        grid-template-columns: repeat(4, 300px);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .testimonials__section .container .cards__grid {
+    -ms-grid-columns: (250px)[4];
+        grid-template-columns: repeat(4, 250px);
+  }
+}
+
 .testimonials__section .container .arrows__container {
   margin-top: 50px;
   -ms-grid-columns: (42px)[2];
@@ -516,6 +530,12 @@ nav .menu__icon__container {
 .testimonials__card .author__container .author__content {
   margin-top: 5px;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 350px) {
+  .testimonials__card .author__container .author__content {
+    margin-left: 10px;
+  }
 }
 
 .testimonials__card .author__container .author__content h4 {

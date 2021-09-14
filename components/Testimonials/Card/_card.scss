@@ -23,6 +23,9 @@
     .author__content {
       margin-top: 5px;
       margin-left: 20px;
+      @media screen and (max-width: 350px) {
+        margin-left: 10px;
+      }
       h4 {
         color: var(--dark-blue);
         line-height: 0.85;
