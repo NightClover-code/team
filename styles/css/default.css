@@ -670,72 +670,6 @@ footer .flex__1 .footer__body {
   }
 }
 
-footer .flex__1 .footer__body ul {
-  list-style: none;
-}
-
-footer .flex__1 .footer__body ul li {
-  line-height: normal;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-footer .flex__1 .footer__body ul li:hover {
-  color: var(--blue);
-}
-
-footer .flex__1 .footer__body ul .special {
-  cursor: auto;
-}
-
-footer .flex__1 .footer__body ul .special:hover {
-  color: var(--link);
-}
-
-footer .flex__1 .footer__body ul .form__input {
-  position: relative;
-  width: 280px !important;
-}
-
-@media screen and (max-width: 400px) {
-  footer .flex__1 .footer__body ul .form__input {
-    width: 100% !important;
-  }
-  footer .flex__1 .footer__body ul .form__input input {
-    width: 100% !important;
-  }
-}
-
-footer .flex__1 .footer__body ul .form__input svg {
-  position: absolute;
-  top: 28px;
-  right: 10px;
-  cursor: pointer;
-}
-
-footer .flex__1 .footer__body ul .form__input svg path {
-  fill: rgba(255, 255, 255, 0.2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-footer .flex__1 .footer__body ul .form__input svg:hover path {
-  fill: rgba(255, 255, 255, 0.8);
-}
-
-footer .flex__1 .footer__body ul .title {
-  color: white;
-  font-size: 18px;
-  line-height: 20px;
-  margin-bottom: 10px;
-  cursor: auto;
-}
-
-footer .flex__1 .footer__body ul .title:hover {
-  color: white;
-}
-
 footer .flex__1 .flex__2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,6 +744,72 @@ footer .footer__bottom .terms {
 footer .footer__bottom .terms:hover {
   color: var(--blue);
   opacity: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  line-height: normal;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: var(--blue);
+}
+
+ul .special {
+  cursor: auto;
+}
+
+ul .special:hover {
+  color: var(--link);
+}
+
+ul .form__input {
+  position: relative;
+  width: 280px !important;
+}
+
+@media screen and (max-width: 400px) {
+  ul .form__input {
+    width: 100% !important;
+  }
+  ul .form__input input {
+    width: 100% !important;
+  }
+}
+
+ul .form__input svg {
+  position: absolute;
+  top: 28px;
+  right: 10px;
+  cursor: pointer;
+}
+
+ul .form__input svg path {
+  fill: rgba(255, 255, 255, 0.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+ul .form__input svg:hover path {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+ul .title {
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  cursor: auto;
+}
+
+ul .title:hover {
+  color: white;
 }
 
 .logo__container {

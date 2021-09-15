@@ -14,15 +14,13 @@ const HomePage: NextPage = () => {
   return (
     <>
       <SEO {...seoConfig} />
-      <div className="app__container">
-        <div className="wrapper">
-          <Header />
-          <Hero />
-          <DashBoard />
-          <Advantages />
-          <Testimonials />
-          <Footer />
-        </div>
+      <div className="wrapper">
+        <Header />
+        <Hero />
+        <DashBoard />
+        <Advantages />
+        <Testimonials />
+        <Footer />
       </div>
     </>
   );

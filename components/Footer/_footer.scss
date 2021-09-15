@@ -29,58 +29,6 @@ footer {
       @media screen and (max-width: 500px) {
         flex-flow: column nowrap;
       }
-      ul {
-        list-style: none;
-        li {
-          line-height: normal;
-          transition: all 0.2s ease-in-out;
-          cursor: pointer;
-          &:hover {
-            color: var(--blue);
-          }
-        }
-        .special {
-          cursor: auto;
-          &:hover {
-            color: var(--link);
-          }
-        }
-        .form__input {
-          position: relative;
-          width: 280px !important;
-          @media screen and (max-width: 400px) {
-            width: 100% !important;
-            input {
-              width: 100% !important;
-            }
-          }
-          svg {
-            position: absolute;
-            top: 28px;
-            right: 10px;
-            cursor: pointer;
-            path {
-              fill: rgba(255, 255, 255, 0.2);
-              transition: all 0.2s ease-in-out;
-            }
-            &:hover {
-              path {
-                fill: rgba(255, 255, 255, 0.8);
-              }
-            }
-          }
-        }
-        .title {
-          color: white;
-          font-size: 18px;
-          line-height: 20px;
-          margin-bottom: 10px;
-          cursor: auto;
-          &:hover {
-            color: white;
-          }
-        }
-      }
     }
     .flex__2 {
       display: flex;
@@ -123,6 +71,59 @@ footer {
         color: var(--blue);
         opacity: 1;
       }
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  li {
+    line-height: normal;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: var(--blue);
+    }
+  }
+  .special {
+    cursor: auto;
+    &:hover {
+      color: var(--link);
+    }
+  }
+  .form__input {
+    position: relative;
+    width: 280px !important;
+    @media screen and (max-width: 400px) {
+      width: 100% !important;
+      input {
+        width: 100% !important;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 28px;
+      right: 10px;
+      cursor: pointer;
+      path {
+        fill: rgba(255, 255, 255, 0.2);
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover {
+        path {
+          fill: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+  .title {
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    cursor: auto;
+    &:hover {
+      color: white;
     }
   }
 }
