@@ -888,7 +888,7 @@ ul .title:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(211, 211, 211, 0.35);
+  background-color: rgba(75, 75, 75, 0.35);
 }
 
 :root {
