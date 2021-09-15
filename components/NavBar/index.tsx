@@ -16,7 +16,7 @@ const NavBar = () => {
       <div className={isNavOpen ? 'mobile__nav' : 'desktop__nav'}>
         <div className="nav__list">
           <ul>
-            <li>Products</li>
+            <li className="products">Products</li>
             <li>Services</li>
             <li className="special">Blog</li>
             <li>Login</li>
