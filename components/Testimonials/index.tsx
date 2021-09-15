@@ -1,9 +1,9 @@
 //importing components
 import Card from './Card';
+import { ArrowBackIcon, ArrowForwardIcon } from '../Icons';
 //importing utils
 import { isEven, testimonialCards } from '../../utils';
 import { v4 as uuidv4 } from 'uuid';
-import { ArrowBackIcon, ArrowForwardIcon } from '../Icons';
 
 const Testimonials = () => {
   return (

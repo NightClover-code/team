@@ -1,3 +1,4 @@
+//importing components
 import LearnMore from './LearnMore';
 
 interface ContentProps {

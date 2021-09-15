@@ -1,3 +1,4 @@
+//importing components
 import { ArrowRightIcon } from '../../Icons';
 
 const LearnMore = () => (

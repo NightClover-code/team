@@ -1,3 +1,4 @@
+//importing types
 import { CSSProperties } from 'react';
 
 interface FormInputProps {
