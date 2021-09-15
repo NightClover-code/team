@@ -17,6 +17,9 @@
       @media screen and (max-width: 350px) {
         grid-template-columns: repeat(4, 250px);
       }
+      @media screen and (max-width: 300px) {
+        grid-template-columns: repeat(4, 220px);
+      }
     }
     .arrows__container {
       margin-top: 50px;

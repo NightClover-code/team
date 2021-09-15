@@ -349,6 +349,12 @@ nav .menu__icon__container {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .dashboard__section .container .mockup__container {
+    right: -960px;
+  }
+}
+
 .advantages__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,6 +479,13 @@ nav .menu__icon__container {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .testimonials__section .container .cards__grid {
+    -ms-grid-columns: (220px)[4];
+        grid-template-columns: repeat(4, 220px);
+  }
+}
+
 .testimonials__section .container .arrows__container {
   margin-top: 50px;
   -ms-grid-columns: (42px)[2];
@@ -502,6 +515,12 @@ nav .menu__icon__container {
   -webkit-box-shadow: 0px 10px 35px 5px rgba(16, 60, 112, 0.08);
           box-shadow: 0px 10px 35px 5px rgba(16, 60, 112, 0.08);
   padding: 40px;
+}
+
+@media screen and (max-width: 300px) {
+  .testimonials__card {
+    height: 500px !important;
+  }
 }
 
 .testimonials__card p {
