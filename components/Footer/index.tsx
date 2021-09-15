@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className="flex">
-          <div className="flex__no__list">
+        <div className="flex__1">
+          <div className="flex__2">
             <div className="footer__head">
               <Logo />
               <p className="caption">Collaboration platform for modern teams</p>
