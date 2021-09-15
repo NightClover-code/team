@@ -244,6 +244,14 @@ nav .nav__items .nav__list ul li:hover::after {
           transform: translateX(-50%) scaleX(1);
 }
 
+nav .nav__items .nav__list ul .special:hover {
+  color: var(--blue);
+}
+
+nav .nav__items .nav__list ul .special::after {
+  background-color: var(--blue);
+}
+
 nav .nav__items button {
   padding: 12px 18px;
   background-color: rgba(0, 0, 0, 0.2);

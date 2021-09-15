@@ -1,8 +1,12 @@
+//importing hooks
+import { useState } from 'react';
 //importing components
-import { MenuIcon } from '../Icons';
+import { CloseIcon, MenuIcon } from '../Icons';
 import Logo from '../Logo';
 
 const NavBar = () => {
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+
   return (
     <nav>
       <div className="logo__container">
@@ -13,14 +17,17 @@ const NavBar = () => {
           <ul>
             <li>Products</li>
             <li>Services</li>
-            <li>Contact</li>
+            <li className="special">Blog</li>
             <li>Login</li>
           </ul>
         </div>
         <button className="primary__button">Get Access</button>
       </div>
-      <div className="menu__icon__container">
-        <MenuIcon />
+      <div
+        className="menu__icon__container"
+        onClick={() => setIsNavOpen(!isNavOpen)}
+      >
+        {isNavOpen ? <CloseIcon /> : <MenuIcon />}
       </div>
     </nav>
   );

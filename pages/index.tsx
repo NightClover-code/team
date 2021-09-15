@@ -4,8 +4,6 @@ import { NextPage } from 'next';
 //importing components
 import Advantages from '../components/Advantages';
 import DashBoard from '../components/Dashboard';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 import Testimonials from '../components/Testimonials';
@@ -15,12 +13,10 @@ const HomePage: NextPage = () => {
     <>
       <SEO {...seoConfig} />
       <div className="wrapper">
-        <Header />
         <Hero />
         <DashBoard />
         <Advantages />
         <Testimonials />
-        <Footer />
       </div>
     </>
   );

@@ -36,6 +36,14 @@ nav {
           }
         }
       }
+      .special {
+        &:hover {
+          color: var(--blue);
+        }
+        &::after {
+          background-color: var(--blue);
+        }
+      }
     }
     button {
       padding: 12px 18px;
