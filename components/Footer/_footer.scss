@@ -9,18 +9,6 @@ footer {
     @media screen and (max-width: 1100px) {
       flex-flow: column nowrap;
     }
-    @media screen and (max-width: 850px) {
-      align-items: center;
-      text-align: center;
-    }
-    .footer__head {
-      @media screen and (max-width: 850px) {
-        display: flex;
-        align-items: center;
-        flex-flow: column nowrap;
-        margin-bottom: 50px;
-      }
-    }
     .footer__body {
       display: flex;
       gap: 100px;
@@ -36,10 +24,8 @@ footer {
       @media screen and (max-width: 1000px) {
         gap: 60px;
       }
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 500px) {
         flex-flow: column nowrap;
-        align-items: center;
-        text-align: center;
       }
     }
   }
@@ -49,16 +35,20 @@ footer {
     width: 100%;
     @media screen and (max-width: 850px) {
       flex-flow: column nowrap;
-      align-items: center;
+      gap: 60px;
     }
   }
   .footer__bottom {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     p {
       color: var(--link);
       opacity: 0.3;
       font-size: 13px;
+      @media screen and (max-width: 400px) {
+        font-size: 12px !important;
+      }
     }
     .terms {
       transition: all 0.2s ease-in-out;
@@ -90,9 +80,15 @@ ul {
   .form__input {
     position: relative;
     width: 280px !important;
+    @media screen and (max-width: 400px) {
+      width: 100% !important;
+      input {
+        width: 100% !important;
+      }
+    }
     svg {
       position: absolute;
-      top: 18px;
+      top: 28px;
       right: 10px;
       cursor: pointer;
       path {
@@ -108,7 +104,7 @@ ul {
   }
   .title {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     margin-bottom: 10px;
     cursor: auto;
@@ -128,9 +124,5 @@ ul {
   }
   @media screen and (max-width: 850px) {
     margin-top: 60px;
-    .special {
-      max-width: 500px !important;
-      text-align: center;
-    }
   }
 }

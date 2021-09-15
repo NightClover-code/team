@@ -571,31 +571,6 @@ footer .flex {
   }
 }
 
-@media screen and (max-width: 850px) {
-  footer .flex {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  footer .flex .footer__head {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    margin-bottom: 50px;
-  }
-}
-
 footer .flex .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,16 +602,12 @@ footer .flex .footer__body {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
   footer .flex .footer__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
   }
 }
 
@@ -656,9 +627,7 @@ footer .flex__no__list {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    gap: 60px;
   }
 }
 
@@ -669,12 +638,20 @@ footer .footer__bottom {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .footer__bottom p {
   color: var(--link);
   opacity: 0.3;
   font-size: 13px;
+}
+
+@media screen and (max-width: 400px) {
+  footer .footer__bottom p {
+    font-size: 12px !important;
+  }
 }
 
 footer .footer__bottom .terms {
@@ -716,9 +693,18 @@ ul .form__input {
   width: 280px !important;
 }
 
+@media screen and (max-width: 400px) {
+  ul .form__input {
+    width: 100% !important;
+  }
+  ul .form__input input {
+    width: 100% !important;
+  }
+}
+
 ul .form__input svg {
   position: absolute;
-  top: 18px;
+  top: 28px;
   right: 10px;
   cursor: pointer;
 }
@@ -735,7 +721,7 @@ ul .form__input svg:hover path {
 
 ul .title {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   margin-bottom: 10px;
   cursor: auto;
@@ -764,10 +750,6 @@ ul .title:hover {
 @media screen and (max-width: 850px) {
   .newsletter {
     margin-top: 60px;
-  }
-  .newsletter .special {
-    max-width: 500px !important;
-    text-align: center;
   }
 }
 
