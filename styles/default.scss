@@ -44,6 +44,12 @@
   background-color: rgba(75, 75, 75, 0.35);
 }
 
+.disable__scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 :root {
   --blue: #1ac5f9;
   --dark-blue: #213757;

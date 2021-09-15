@@ -13,7 +13,7 @@ const NavBar = () => {
       <div className="logo__container">
         <Logo />
       </div>
-      <div className="nav__items">
+      <div className={isNavOpen ? 'mobile__nav' : 'desktop__nav'}>
         <div className="nav__list">
           <ul>
             <li>Products</li>

@@ -194,7 +194,7 @@ nav {
           align-items: center;
 }
 
-nav .nav__items {
+nav .desktop__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,19 +204,19 @@ nav .nav__items {
 }
 
 @media screen and (max-width: 710px) {
-  nav .nav__items {
+  nav .desktop__nav {
     display: none;
   }
 }
 
-nav .nav__items .nav__list ul {
+nav .desktop__nav .nav__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-nav .nav__items .nav__list ul li {
+nav .desktop__nav .nav__list ul li {
   position: relative;
   color: white;
   margin: 0 20px;
@@ -225,7 +225,7 @@ nav .nav__items .nav__list ul li {
   cursor: pointer;
 }
 
-nav .nav__items .nav__list ul li::after {
+nav .desktop__nav .nav__list ul li::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -239,20 +239,20 @@ nav .nav__items .nav__list ul li::after {
   width: 100%;
 }
 
-nav .nav__items .nav__list ul li:hover::after {
+nav .desktop__nav .nav__list ul li:hover::after {
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
 }
 
-nav .nav__items .nav__list ul .special:hover {
+nav .desktop__nav .nav__list ul .special:hover {
   color: var(--blue);
 }
 
-nav .nav__items .nav__list ul .special::after {
+nav .desktop__nav .nav__list ul .special::after {
   background-color: var(--blue);
 }
 
-nav .nav__items button {
+nav .desktop__nav button {
   padding: 12px 18px;
   background-color: rgba(0, 0, 0, 0.2);
   font-family: inherit;
@@ -262,10 +262,25 @@ nav .nav__items button {
   font-size: 15px;
 }
 
-nav .nav__items button:hover {
+nav .desktop__nav button:hover {
   background-color: var(--blue);
   border-color: var(--blue);
   opacity: 1;
+}
+
+nav .mobile__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 150px;
 }
 
 nav .menu__icon__container {
@@ -889,6 +904,12 @@ ul .title:hover {
   right: 0;
   bottom: 0;
   background-color: rgba(75, 75, 75, 0.35);
+}
+
+.disable__scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 :root {

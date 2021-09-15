@@ -1,4 +1,4 @@
-//importing utils & types
+//importing types & utils
 import { seoConfig } from '../utils';
 import { NextPage } from 'next';
 //importing components
