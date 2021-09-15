@@ -5,11 +5,11 @@ import Footer from '../components/Footer';
 //main layout
 const MainLayout: React.FC = ({ children }) => {
   return (
-    <div className="app__container">
+    <main className="app__container">
       <Header />
       {children}
       <Footer />
-    </div>
+    </main>
   );
 };
 

@@ -1,11 +1,12 @@
-//importing hooks
-import { useState } from 'react';
+//importing hooks & context
+import { useContext } from 'react';
+import { NavContext } from '../../context';
 //importing components
 import { CloseIcon, MenuIcon } from '../Icons';
 import Logo from '../Logo';
 
 const NavBar = () => {
-  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+  const { isNavOpen, setIsNavOpen } = useContext(NavContext);
 
   return (
     <nav>
