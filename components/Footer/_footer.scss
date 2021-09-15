@@ -2,10 +2,12 @@ footer {
   background-color: rgba(33, 55, 87, 0.95);
   padding: 60px 0 20px 0;
   margin-top: 100px;
-
   .flex {
     display: flex;
     margin-bottom: 150px;
+    @media screen and (max-width: 850px) {
+      margin-bottom: 100px;
+    }
     @media screen and (max-width: 1100px) {
       flex-flow: column nowrap;
     }

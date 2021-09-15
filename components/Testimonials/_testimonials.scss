@@ -11,6 +11,7 @@
       grid-template-columns: repeat(4, 370px);
       grid-template-rows: 380px;
       gap: 30px;
+
       @media screen and (max-width: 450px) {
         grid-template-columns: repeat(4, 300px);
       }
@@ -27,6 +28,12 @@
       display: grid;
       justify-content: flex-end;
       gap: 13px;
+      @media screen and (max-width: 350px) {
+        margin-top: 100px;
+      }
+      @media screen and (max-width: 300px) {
+        margin-top: 180px;
+      }
       .arrow {
         cursor: pointer;
       }
