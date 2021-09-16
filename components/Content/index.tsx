@@ -8,7 +8,7 @@ interface ContentProps {
 
 const Content: React.FC<ContentProps> = ({ title, description }) => {
   return (
-    <div className="content">
+    <div className="content" data-aos="fade-up">
       <h1>{title}</h1>
       <p>{description}</p>
       <LearnMore />

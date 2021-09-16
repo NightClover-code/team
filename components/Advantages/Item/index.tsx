@@ -18,21 +18,33 @@ const Item: React.FC<ItemProps> = props => {
       {isEven(props.order!) ? (
         <>
           <Content {...props} />
-          <Image
-            src={props.imgSource}
-            alt={props.imgAlt}
-            width={547}
-            height={547}
-          />
+          <div
+            className="img__container"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            <Image
+              src={props.imgSource}
+              alt={props.imgAlt}
+              width={547}
+              height={547}
+            />
+          </div>
         </>
       ) : (
         <>
-          <Image
-            src={props.imgSource}
-            alt={props.imgAlt}
-            width={547}
-            height={547}
-          />
+          <div
+            className="img__container"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <Image
+              src={props.imgSource}
+              alt={props.imgAlt}
+              width={547}
+              height={547}
+            />
+          </div>
           <Content {...props} />
         </>
       )}

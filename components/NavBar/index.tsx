@@ -9,7 +9,7 @@ const NavBar = () => {
   const { isNavOpen, setIsNavOpen } = useContext(NavContext);
 
   return (
-    <nav>
+    <nav data-aos="fade-up">
       <div className="logo__container">
         <Logo />
       </div>

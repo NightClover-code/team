@@ -37,8 +37,15 @@ const Testimonials = () => {
   return (
     <section className="testimonials__section">
       <div className="container">
-        <h1>What people say about Team</h1>
-        <div className="cards__grid" ref={gridRef}>
+        <h1 data-aos="fade-up" data-aos-delay="100">
+          What people say about Team
+        </h1>
+        <div
+          className="cards__grid"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          ref={gridRef}
+        >
           {testimonialCards.map((card, index) => (
             <Card
               {...card}
@@ -47,7 +54,7 @@ const Testimonials = () => {
             />
           ))}
         </div>
-        <div className="arrows__container">
+        <div className="arrows__container" data-aos="fade-left">
           <div
             className={`arrow arrow__back ${
               counter === 0 ? 'active__arrow' : ''
