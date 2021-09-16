@@ -127,4 +127,4 @@ export const CloseIcon = () => (
   </svg>
 );
 
-export * from './Mockup';
+export * from './Mockups';
