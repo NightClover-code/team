@@ -5,6 +5,7 @@ export const MockupEvent__1 = () => (
     viewBox="0 0 313 227"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className="mockup__event__1"
   >
     <g filter="url(#filter0_d)">
       <rect
@@ -154,6 +155,7 @@ export const MockupEvent__2 = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
+    className="mockup__event__2"
   >
     <g filter="url(#filter0_d)">
       <rect
@@ -306,6 +308,7 @@ export const MockupEvent__2 = () => (
 
 export const MockupEvent__3 = () => (
   <svg
+    className="mockup__event__3"
     width="353"
     height="220"
     viewBox="0 0 353 220"

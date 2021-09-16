@@ -3,13 +3,34 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 180px;
+  overflow: visible;
   @media screen and (max-width: 850px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 100px 0;
   }
-
+  .img__container {
+    position: relative;
+    .mockup__event__1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 100;
+    }
+    .mockup__event__2 {
+      position: absolute;
+      top: 150px;
+      right: 0;
+      z-index: 100;
+    }
+    .mockup__event__3 {
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      z-index: 100;
+    }
+  }
   .content {
     @media screen and (max-width: 1300px) {
       width: 80%;

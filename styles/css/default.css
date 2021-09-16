@@ -426,6 +426,7 @@ nav .menu__icon__container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 180px;
+  overflow: visible;
 }
 
 @media screen and (max-width: 850px) {
@@ -438,6 +439,28 @@ nav .menu__icon__container {
         grid-template-rows: auto;
     margin: 100px 0;
   }
+}
+
+.advantages__item .img__container {
+  position: relative;
+}
+
+.advantages__item .img__container .mockup__event__1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.advantages__item .img__container .mockup__event__2 {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  z-index: 100;
+}
+
+.advantages__item .img__container .mockup__event__3 {
+  z-index: 100;
 }
 
 @media screen and (max-width: 1300px) {
