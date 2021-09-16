@@ -941,6 +941,8 @@ ul .title:hover {
   right: 0;
   bottom: 0;
   background-color: rgba(48, 54, 79, 0.97);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .disable__scroll {
