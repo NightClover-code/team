@@ -1,5 +1,6 @@
-import { heroInputConfig } from '../../utils';
+//importing utils
 import FormInput from '../Forms/Input';
+import { heroInputConfig } from '../../utils';
 
 const Hero = () => {
   return (
