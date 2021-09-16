@@ -574,6 +574,16 @@ nav .menu__icon__container {
   cursor: pointer;
 }
 
+.testimonials__section .container .arrows__container .arrow svg path {
+  fill: #1ac5f9;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.active__arrow svg path {
+  fill: #bbc8d4 !important;
+}
+
 .testimonials__card {
   display: -webkit-box;
   display: -ms-flexbox;

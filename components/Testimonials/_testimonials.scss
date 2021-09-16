@@ -36,7 +36,17 @@
       }
       .arrow {
         cursor: pointer;
+        svg path {
+          fill: #1ac5f9;
+          transition: all 0.2s ease-in-out;
+        }
       }
     }
+  }
+}
+
+.active__arrow {
+  svg path {
+    fill: #bbc8d4 !important;
   }
 }

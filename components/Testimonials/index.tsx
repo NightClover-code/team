@@ -48,11 +48,18 @@ const Testimonials = () => {
           ))}
         </div>
         <div className="arrows__container">
-          <div className="arrow arrow__back" onClick={onArrowLeftClickHandler}>
+          <div
+            className={`arrow arrow__back ${
+              counter === 0 ? 'active__arrow' : ''
+            }`}
+            onClick={onArrowLeftClickHandler}
+          >
             <ArrowBackIcon />
           </div>
           <div
-            className="arrow arrow__forward"
+            className={`arrow arrow__forward ${
+              counter === responsiveNum ? 'active__arrow' : ''
+            }`}
             onClick={onArrowRightClickHandler}
           >
             <ArrowForwardIcon />
