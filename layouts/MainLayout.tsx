@@ -6,6 +6,7 @@ import { disableScroll, hideNav } from '../utils';
 //importing components
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import NavBar from '../components/Header/NavBar';
 
 //main layout
 const MainLayout: React.FC = ({ children }) => {
@@ -21,7 +22,9 @@ const MainLayout: React.FC = ({ children }) => {
 
   return (
     <main className="app__container">
-      <Header />
+      <Header>
+        <NavBar />
+      </Header>
       {children}
       <Footer />
     </main>

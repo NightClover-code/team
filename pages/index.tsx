@@ -7,10 +7,11 @@ import DashBoard from '../components/Dashboard';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 import Testimonials from '../components/Testimonials';
+import MainLayout from '../layouts/MainLayout';
 
 const HomePage: NextPage = () => {
   return (
-    <>
+    <MainLayout>
       <SEO {...seoConfig} />
       <div className="wrapper">
         <Hero />
@@ -18,7 +19,7 @@ const HomePage: NextPage = () => {
         <Advantages />
         <Testimonials />
       </div>
-    </>
+    </MainLayout>
   );
 };
 

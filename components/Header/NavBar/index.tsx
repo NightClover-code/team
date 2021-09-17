@@ -1,9 +1,9 @@
 //importing hooks & context
 import { useContext } from 'react';
-import { NavContext } from '../../context';
+import { NavContext } from '../../../context';
 //importing components
-import { CloseIcon, MenuIcon } from '../Icons';
-import Logo from '../Logo';
+import { CloseIcon, MenuIcon } from '../../Icons';
+import Logo from '../../Logo';
 import Link from 'next/link';
 
 const NavBar = () => {

@@ -3,7 +3,7 @@
 //styles
 @import '../components/Hero/hero';
 @import '../components/Header/header';
-@import '../components/NavBar/navbar';
+@import '../components/Header/NavBar/navbar';
 @import '../components/Dashboard/dashboard';
 @import '../components/Advantages/Item/item';
 @import '../components/Content/content';
@@ -13,6 +13,7 @@
 @import '../components/Footer/footer';
 @import '../components/Logo/logo';
 @import '../components/Forms/Input/input';
+@import '../components/BlogHeader/NavBar/navbar';
 
 * {
   margin: 0;
