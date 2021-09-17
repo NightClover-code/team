@@ -255,11 +255,12 @@ nav .mobile__nav button {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: white;
 }
 
 nav .mobile__nav button:hover {
-  background-color: #fff;
-  color: rgba(48, 54, 79, 0.95);
+  background-color: #fff !important;
+  color: rgba(48, 54, 79, 0.95) !important;
 }
 
 nav .menu__icon__container {

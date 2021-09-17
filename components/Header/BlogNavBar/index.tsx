@@ -13,7 +13,7 @@ const BlogNavBar = () => {
   return (
     <nav>
       <div className="logo__container">
-        <Logo {...blogLogoConfig} />
+        <Logo {...(!isNavOpen ? blogLogoConfig : {})} />
       </div>
       <div className={isNavOpen ? 'mobile__nav' : 'desktop__nav'}>
         <div className="nav__list">
@@ -30,7 +30,7 @@ const BlogNavBar = () => {
         className="menu__icon__container"
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
-        {isNavOpen ? <CloseIcon /> : <MenuIcon />}
+        {isNavOpen ? <CloseIcon /> : <MenuIcon color="var(--dark-blue)" />}
       </div>
     </nav>
   );

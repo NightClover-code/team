@@ -1,15 +1,15 @@
-import { ArrowForwardProps } from './interfaces';
+import { ArrowForwardProps, MenuIconProps } from './interfaces';
 import { defaultLogoConfig } from '../../utils';
 import { LogoProps } from '../Logo';
 
 //icons
-export const MenuIcon = () => (
+export const MenuIcon: React.FC<MenuIconProps> = ({ color }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height="24px"
     viewBox="0 0 24 24"
     width="24px"
-    fill="#ffffff"
+    fill={color || '#ffffff'}
   >
     <path d="M0 0h24v24H0V0z" fill="none" />
     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />

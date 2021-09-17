@@ -39,9 +39,10 @@ nav {
       font-size: 18px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      color: white;
       &:hover {
-        background-color: #fff;
-        color: rgba(48, 54, 79, 0.95);
+        background-color: #fff !important;
+        color: rgba(48, 54, 79, 0.95) !important;
       }
     }
   }
