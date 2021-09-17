@@ -24,7 +24,7 @@ const BlogNavBar = () => {
             <li>Login</li>
           </ul>
         </div>
-        <button className="primary__button">Get Access</button>
+        <button className="secondary__button">Get Access</button>
       </div>
       <div
         className="menu__icon__container"

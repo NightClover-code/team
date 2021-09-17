@@ -1,3 +1,29 @@
 .blog__ul {
+  display: flex;
+  list-style: none;
+  li {
+    color: var(--dark-blue);
+    &::after {
+      background-color: var(--dark-blue);
+    }
+    &:hover {
+      opacity: 0.5;
+      color: var(--dark-blue);
+    }
+  }
+}
+
+.secondary__button {
   color: var(--dark-blue);
+  border: 3px solid var(--dark-blue);
+  background-color: var(--off-white);
+  padding: 8px 16px;
+  margin-left: 20px;
+  letter-spacing: 0.15px;
+  font-weight: 600;
+  &:hover {
+    background-color: var(--dark-blue);
+    color: white;
+    border-color: var(--dark-blue);
+  }
 }

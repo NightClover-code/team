@@ -39,7 +39,7 @@ p {
   }
 }
 
-.primary__button {
+button {
   height: 100%;
   font-size: 16px;
   font-weight: 500;
@@ -53,7 +53,7 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-.primary__button:hover {
+button:hover {
   opacity: 90%;
 }
 
@@ -226,50 +226,22 @@ nav .desktop__nav {
   }
 }
 
-nav .desktop__nav .nav__list ul {
+nav .desktop__nav .nav__list .nav__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-nav .desktop__nav .nav__list ul li {
-  position: relative;
-  color: white;
-  margin: 0 20px;
-  font-size: 15px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-nav .desktop__nav .nav__list ul li::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -3px;
-  -webkit-transform: translateX(-50%) scaleX(0);
-          transform: translateX(-50%) scaleX(0);
-  height: 2px;
-  background-color: white;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  width: 100%;
-}
-
-nav .desktop__nav .nav__list ul li:hover::after {
-  -webkit-transform: translateX(-50%) scaleX(1);
-          transform: translateX(-50%) scaleX(1);
-}
-
-nav .desktop__nav .nav__list ul .special:hover {
+nav .desktop__nav .nav__list .nav__ul .special:hover {
   color: var(--blue);
 }
 
-nav .desktop__nav .nav__list ul .special::after {
+nav .desktop__nav .nav__list .nav__ul .special::after {
   background-color: var(--blue);
 }
 
-nav .desktop__nav button {
+nav .desktop__nav .primary__button {
   padding: 12px 18px;
   background-color: rgba(0, 0, 0, 0.2);
   font-family: inherit;
@@ -279,28 +251,13 @@ nav .desktop__nav button {
   font-size: 16px;
 }
 
-nav .desktop__nav button:hover {
+nav .desktop__nav .primary__button:hover {
   background-color: var(--blue);
   border-color: var(--blue);
   opacity: 1;
 }
 
-nav .desktop__nav .secondary__button {
-  color: var(--dark-blue);
-  border: 3px solid var(--dark-blue);
-  background-color: var(--off-white);
-  padding: 10px 16px;
-  font-weight: 600;
-  opacity: 0.5;
-}
-
-nav .desktop__nav .secondary__button:hover {
-  background-color: var(--dark-blue);
-  color: white;
-  border-color: var(--dark-blue);
-}
-
-nav .mobile__nav {
+nav .desktop__nav .mobile__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +273,7 @@ nav .mobile__nav {
   width: 80%;
 }
 
-nav .mobile__nav ul li {
+nav .desktop__nav .mobile__nav .nav__ul li {
   display: block;
   text-transform: uppercase;
   font-weight: 500;
@@ -328,27 +285,12 @@ nav .mobile__nav ul li {
   cursor: pointer !important;
 }
 
-nav .mobile__nav ul li:hover {
+nav .desktop__nav .mobile__nav .nav__ul li:hover {
   color: var(--blue) !important;
 }
 
-nav .mobile__nav ul .products {
+nav .desktop__nav .mobile__nav .nav__ul .products {
   border-top: 1px solid rgba(95, 104, 141, 0.5);
-}
-
-nav .mobile__nav .primary__button {
-  height: 60px;
-  background-color: transparent;
-  border: 2px solid #fff;
-  margin-top: 40px;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-nav .mobile__nav .primary__button:hover {
-  background-color: #fff;
-  color: rgba(48, 54, 79, 0.95);
 }
 
 nav .menu__icon__container {
@@ -362,6 +304,34 @@ nav .menu__icon__container {
   nav .menu__icon__container {
     display: block;
   }
+}
+
+li {
+  position: relative;
+  color: white;
+  margin: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  height: 2px;
+  background-color: white;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  width: 100%;
+}
+
+li:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
 }
 
 .dashboard__section {
@@ -953,7 +923,39 @@ ul .title:hover {
 }
 
 .blog__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.blog__ul li {
   color: var(--dark-blue);
+}
+
+.blog__ul li::after {
+  background-color: var(--dark-blue);
+}
+
+.blog__ul li:hover {
+  opacity: 0.5;
+  color: var(--dark-blue);
+}
+
+.secondary__button {
+  color: var(--dark-blue);
+  border: 3px solid var(--dark-blue);
+  background-color: var(--off-white);
+  padding: 8px 16px;
+  margin-left: 20px;
+  letter-spacing: 0.15px;
+  font-weight: 600;
+}
+
+.secondary__button:hover {
+  background-color: var(--dark-blue);
+  color: white;
+  border-color: var(--dark-blue);
 }
 
 * {
