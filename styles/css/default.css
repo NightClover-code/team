@@ -276,13 +276,28 @@ nav .desktop__nav button {
   margin-left: 20px;
   letter-spacing: 0.15px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 nav .desktop__nav button:hover {
   background-color: var(--blue);
   border-color: var(--blue);
   opacity: 1;
+}
+
+nav .desktop__nav .secondary__button {
+  color: var(--dark-blue);
+  border: 3px solid var(--dark-blue);
+  background-color: var(--off-white);
+  padding: 10px 16px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+nav .desktop__nav .secondary__button:hover {
+  background-color: var(--dark-blue);
+  color: white;
+  border-color: var(--dark-blue);
 }
 
 nav .mobile__nav {

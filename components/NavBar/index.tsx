@@ -4,6 +4,7 @@ import { NavContext } from '../../context';
 //importing components
 import { CloseIcon, MenuIcon } from '../Icons';
 import Logo from '../Logo';
+import Link from 'next/link';
 
 const NavBar = () => {
   const { isNavOpen, setIsNavOpen } = useContext(NavContext);
@@ -18,7 +19,9 @@ const NavBar = () => {
           <ul>
             <li className="products">Products</li>
             <li>Services</li>
-            <li className="special">Blog</li>
+            <Link href="/blog" passHref>
+              <li className="special">Blog</li>
+            </Link>
             <li>Login</li>
           </ul>
         </div>

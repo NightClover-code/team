@@ -3,6 +3,11 @@ export const defaultLogoConfig = {
   secondaryColor: 'var(--blue)',
 };
 
+export const blogLogoConfig = {
+  primaryColor: 'var(--dark-blue)',
+  secondaryColor: 'var(--blue)',
+};
+
 export const newsletterInputConfig = {
   fontSize: '14px',
   width: '280px',
