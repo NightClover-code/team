@@ -65,8 +65,8 @@ nav {
     flex-flow: column nowrap;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     top: 160px;
+    transform: translateX(-50%);
     width: 80%;
     ul {
       li {
@@ -89,7 +89,6 @@ nav {
     }
     .primary__button {
       height: 60px;
-      z-index: 100 !important;
       background-color: transparent;
       border: 2px solid #fff;
       margin-top: 40px;
