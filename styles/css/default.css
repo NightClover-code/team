@@ -952,6 +952,10 @@ ul .title:hover {
   opacity: 50%;
 }
 
+.blog__ul {
+  color: var(--dark-blue);
+}
+
 * {
   margin: 0;
   padding: 0;

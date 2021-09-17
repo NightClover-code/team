@@ -6,10 +6,13 @@ import { disableScroll, hideNav } from '../utils';
 //importing components
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import NavBar from '../components/Header/NavBar';
+
+interface MainLayoutInterface {
+  NavBar: React.FC;
+}
 
 //main layout
-const MainLayout: React.FC = ({ children }) => {
+const MainLayout: React.FC<MainLayoutInterface> = ({ children, NavBar }) => {
   const { isNavOpen, setIsNavOpen } = useContext(NavContext);
 
   useEffect(() => {

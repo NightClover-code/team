@@ -8,10 +8,11 @@ import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 import Testimonials from '../components/Testimonials';
 import MainLayout from '../layouts/MainLayout';
+import NavBar from '../components/Header/NavBar';
 
 const HomePage: NextPage = () => {
   return (
-    <MainLayout>
+    <MainLayout NavBar={NavBar}>
       <SEO {...seoConfig} />
       <div className="wrapper">
         <Hero />

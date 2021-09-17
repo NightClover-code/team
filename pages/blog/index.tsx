@@ -4,10 +4,11 @@ import { blogSeoConfig } from '../../utils';
 //importing components
 import SEO from '../../components/SEO';
 import MainLayout from '../../layouts/MainLayout';
+import BlogNavBar from '../../components/Header/BlogNavBar';
 
 const BlogPage: NextPage = () => {
   return (
-    <MainLayout>
+    <MainLayout NavBar={BlogNavBar}>
       <SEO {...blogSeoConfig} />
       <div className="wrapper"></div>
     </MainLayout>
