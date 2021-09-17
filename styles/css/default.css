@@ -963,6 +963,15 @@ ul .title:hover {
   border-color: var(--dark-blue);
 }
 
+.blog__section {
+  margin-top: 180px;
+}
+
+.blog__section h1 {
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
