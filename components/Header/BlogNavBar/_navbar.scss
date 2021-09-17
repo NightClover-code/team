@@ -1,14 +1,9 @@
-.blog__ul {
-  display: flex;
-  list-style: none;
+.desktop__nav .blog__ul {
   li {
-    color: var(--dark-blue);
+    color: var(--dark-blue) !important;
+    font-weight: 600 !important;
     &::after {
-      background-color: var(--dark-blue);
-    }
-    &:hover {
-      opacity: 0.5;
-      color: var(--dark-blue);
+      background-color: var(--dark-blue) !important;
     }
   }
 }
