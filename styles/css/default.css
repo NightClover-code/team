@@ -981,6 +981,49 @@ ul .title:hover {
   gap: 60px 30px;
 }
 
+.blog__section .custom__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.blog__section .custom__button button {
+  color: rgba(33, 55, 87, 0.7);
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6px;
+  padding: 15px 60px;
+  background-color: rgba(33, 55, 87, 0.1);
+}
+
+.blog__section .custom__button button svg {
+  margin-top: 1px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog__section .custom__button button:hover {
+  opacity: 0.8;
+}
+
+.blog__section .custom__button button:hover svg {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
 .blog__article {
   border-radius: 8px;
   overflow: hidden;

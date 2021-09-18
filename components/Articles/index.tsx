@@ -1,3 +1,4 @@
+import { ChevronRightIcon } from '../Icons';
 import Article from './Article';
 
 const Blog = () => {
@@ -20,6 +21,12 @@ const Blog = () => {
         <Article />
         <Article />
         <Article />
+      </div>
+      <div className="custom__button">
+        <button>
+          Next
+          <ChevronRightIcon />
+        </button>
       </div>
     </section>
   );

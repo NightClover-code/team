@@ -10,4 +10,30 @@
     grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     gap: 60px 30px;
   }
+  .custom__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    button {
+      color: rgba(33, 55, 87, 0.7);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 15px 60px;
+      background-color: rgba(33, 55, 87, 0.1);
+      svg {
+        margin-top: 1px;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover {
+        opacity: 0.8;
+        svg {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
 }
