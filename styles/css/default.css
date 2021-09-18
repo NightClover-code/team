@@ -949,7 +949,7 @@ ul .title:hover {
 
 .secondary__button {
   color: var(--dark-blue);
-  border: 3px solid var(--dark-blue);
+  border: 2px solid var(--dark-blue);
   background-color: var(--off-white);
   padding: 8px 16px;
   margin-left: 20px;
