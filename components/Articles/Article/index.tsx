@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-const Card = () => {
+const Article = () => {
   return (
     <div className="blog__article">
       <div className="img__container">
         <Image
           src="https://res.cloudinary.com/achraf-dev/image/upload/v1630269985/hero_buymwb.jpg"
-          width={367}
-          height={200}
+          layout="fill"
+          objectFit="cover"
           alt="random"
         />
       </div>
@@ -21,18 +21,20 @@ const Card = () => {
           <div className="avatar__container">
             <Image
               src="https://res.cloudinary.com/achraf-dev/image/upload/v1630445340/jack-finnigan-rriAI0nhcbc-unsplash_jklbin.jpg"
-              width="30"
-              height="30"
+              layout="fill"
               alt="random"
+              objectFit="cover"
             />
           </div>
-          <span>David Simons</span>
-          <div className="vertical__line"></div>
-          <span className="published__at">25 january 2020</span>
+          <div className="author__info">
+            <span>David Simons</span>
+            <div className="vertical__line"></div>
+            <span className="published__at">25 january 2020</span>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default Article;

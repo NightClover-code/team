@@ -1,3 +1,5 @@
+import Article from './Article';
+
 const Blog = () => {
   return (
     <section className="blog__section">
@@ -8,7 +10,17 @@ const Blog = () => {
           presses.
         </p>
       </div>
-      <div className="blog__grid"></div>
+      <div className="blog__grid">
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+      </div>
     </section>
   );
 };
