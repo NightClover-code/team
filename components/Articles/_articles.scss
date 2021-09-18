@@ -4,4 +4,8 @@
     color: var(--dark-blue);
     margin-bottom: 20px;
   }
+  .blog__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, mixmax(400px, 1fr));
+  }
 }

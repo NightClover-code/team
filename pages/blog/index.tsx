@@ -5,7 +5,7 @@ import { blogSeoConfig } from '../../utils';
 import SEO from '../../components/SEO';
 import MainLayout from '../../layouts/MainLayout';
 import BlogNavBar from '../../components/Header/BlogNavBar';
-import Blog from '../../components/Blog';
+import Articles from '../../components/Articles';
 
 const BlogPage: NextPage = () => {
   return (
@@ -13,7 +13,7 @@ const BlogPage: NextPage = () => {
       <SEO {...blogSeoConfig} />
       <div className="wrapper">
         <div className="container">
-          <Blog />
+          <Articles />
         </div>
       </div>
     </MainLayout>

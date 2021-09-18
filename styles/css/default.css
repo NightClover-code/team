@@ -972,6 +972,13 @@ ul .title:hover {
   margin-bottom: 20px;
 }
 
+.blog__section .blog__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (mixmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, mixmax(400px, 1fr));
+}
+
 * {
   margin: 0;
   padding: 0;
