@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/css/default.css';
-//importing components & types
+//importing components, utils & types
 import type { AppProps } from 'next/app';
 import { NavProvider } from '../context';
 import { ApolloClient, InMemoryCache } from '@apollo/client';

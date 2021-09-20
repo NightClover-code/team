@@ -7,13 +7,17 @@ export const articleDetailFragment = gql`
     title
     description
     content
-    image
+    image {
+      url
+    }
     slug
     author {
       name
       description
       publishDate
-      avatar
+      avatar {
+        url
+      }
       slug
     }
   }
