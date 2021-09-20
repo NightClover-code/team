@@ -5,6 +5,7 @@ import { blogSeoConfig } from '../../utils';
 import BlogNavBar from '../../components/Header/BlogNavBar';
 import MainLayout from '../../layouts/MainLayout';
 import SEO from '../../components/SEO';
+import ArticleDetail from '../../components/ArticleDetail';
 
 //TODO change seo config
 const BlogDetailPage: NextPage = () => {
@@ -12,7 +13,9 @@ const BlogDetailPage: NextPage = () => {
     <MainLayout NavBar={BlogNavBar}>
       <SEO {...blogSeoConfig} />
       <main className="wrapper">
-        <div className="container"></div>
+        <div className="container">
+          <ArticleDetail />
+        </div>
       </main>
     </MainLayout>
   );

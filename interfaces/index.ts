@@ -13,15 +13,15 @@ export interface ArticleDetail {
     url: string;
   };
   slug: string;
-  author: Author;
+  author: AuthorDetail;
 }
 
-export interface Author {
+export interface AuthorDetail {
   name: string;
-  description: string;
+  description?: string;
   publishDate: string;
   avatar: {
     url: string;
   };
-  slug: string;
+  slug?: string;
 }

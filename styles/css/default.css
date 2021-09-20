@@ -1063,7 +1063,13 @@ ul .title:hover {
   padding-top: 20px;
 }
 
-.blog__article .text__content .author__content {
+.article__detail h1 {
+  color: var(--dark-blue);
+  max-width: 700px;
+  margin: 200px auto 30px auto;
+}
+
+.author__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,7 +1080,7 @@ ul .title:hover {
   padding-top: 30px;
 }
 
-.blog__article .text__content .author__content .avatar__container {
+.author__content .avatar__container {
   width: 30px;
   height: 30px;
   position: relative;
@@ -1082,19 +1088,19 @@ ul .title:hover {
   overflow: hidden;
 }
 
-.blog__article .text__content .author__content .author__info {
+.author__content .author__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 15px;
 }
 
-.blog__article .text__content .author__content .author__info span {
+.author__content .author__info span {
   font-size: 14px;
   opacity: 80%;
 }
 
-.blog__article .text__content .author__content .author__info .vertical__line {
+.author__content .author__info .vertical__line {
   margin: 0 10px;
   display: block;
   width: 1px;
