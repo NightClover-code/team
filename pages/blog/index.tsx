@@ -14,8 +14,6 @@ interface BlogPageProps {
 }
 
 const BlogPage: NextPage<BlogPageProps> = ({ articles }) => {
-  console.log(articles);
-
   return (
     <MainLayout NavBar={BlogNavBar}>
       <SEO {...blogSeoConfig} />
