@@ -7,6 +7,13 @@ import '../styles/css/default.css';
 //importing components & types
 import type { AppProps } from 'next/app';
 import { NavProvider } from '../context';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+
+//apollo client init
+export const client = new ApolloClient({
+  uri: process.env.NEXT_PUBLIC_SERVER_URL,
+  cache: new InMemoryCache(),
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
