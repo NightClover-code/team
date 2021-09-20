@@ -14,12 +14,12 @@ const HomePage: NextPage = () => {
   return (
     <MainLayout NavBar={NavBar}>
       <SEO {...seoConfig} />
-      <div className="wrapper">
+      <main className="wrapper">
         <Hero />
         <DashBoard />
         <Advantages />
         <Testimonials />
-      </div>
+      </main>
     </MainLayout>
   );
 };

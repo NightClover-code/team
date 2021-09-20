@@ -24,13 +24,13 @@ const MainLayout: React.FC<MainLayoutInterface> = ({ children, NavBar }) => {
   }, [isNavOpen]);
 
   return (
-    <main className="app__container">
+    <div className="app__container">
       <Header>
         <NavBar />
       </Header>
       {children}
       <Footer />
-    </main>
+    </div>
   );
 };
 

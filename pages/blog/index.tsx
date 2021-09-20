@@ -19,11 +19,11 @@ const BlogPage: NextPage<BlogPageProps> = ({ articles }) => {
   return (
     <MainLayout NavBar={BlogNavBar}>
       <SEO {...blogSeoConfig} />
-      <div className="wrapper">
+      <main className="wrapper">
         <div className="container">
           <Articles articles={articles} />
         </div>
-      </div>
+      </main>
     </MainLayout>
   );
 };

@@ -20,9 +20,9 @@ const Blog: React.FC<ArticleProps> = ({ articles }) => {
         </p>
       </div>
       <div className="blog__grid" data-aos="fade-up" data-aos-delay="400">
-        {articles.map(article => (
-          <Article key={uuidv4()} article={article} />
-        ))}
+        {articles.map(article => {
+          return <Article article={article} key={uuidv4()} />;
+        })}
       </div>
       <div className="custom__button" data-aos="fade-up">
         <button>
