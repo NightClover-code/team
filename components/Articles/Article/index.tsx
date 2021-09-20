@@ -1,7 +1,16 @@
+//importing types
+import { ArticleDetail } from '../../../interfaces';
 //importing components
 import Image from 'next/image';
 
-const Article = () => {
+interface ArticleProps {
+  article: ArticleDetail;
+}
+
+const Article: React.FC<ArticleProps> = ({ article }) => {
+  const { title, description, image } = article;
+  const { avatar, name, publishDate } = article.author;
+
   return (
     <div className="blog__article">
       <div className="img__container">
@@ -13,11 +22,8 @@ const Article = () => {
         />
       </div>
       <div className="text__content">
-        <h2>10 secrets for managing a remote team</h2>
-        <p>
-          There are times when our work impacts us deeply — sometimes in ways we
-          neither acknowledge nor understand.
-        </p>
+        <h2>{title}</h2>
+        <p>{description}</p>
         <div className="author__content">
           <div className="avatar__container">
             <Image
@@ -28,9 +34,9 @@ const Article = () => {
             />
           </div>
           <div className="author__info">
-            <span>David Simons</span>
+            <span>{name}</span>
             <div className="vertical__line"></div>
-            <span className="published__at">25 january 2020</span>
+            <span className="published__at">{publishDate}</span>
           </div>
         </div>
       </div>

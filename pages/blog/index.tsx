@@ -1,6 +1,6 @@
 //importing types & utils
 import { GetStaticProps, NextPage } from 'next';
-import { Article } from '../../interfaces';
+import { ArticleDetail } from '../../interfaces';
 import { blogSeoConfig, client } from '../../utils';
 //importing components
 import SEO from '../../components/SEO';
@@ -10,7 +10,7 @@ import Articles from '../../components/Articles';
 import { articlesQuery } from '../../graphql';
 
 interface BlogPageProps {
-  articles: Article[];
+  articles: ArticleDetail[];
 }
 
 const BlogPage: NextPage<BlogPageProps> = ({ articles }) => {
@@ -21,7 +21,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ articles }) => {
       <SEO {...blogSeoConfig} />
       <div className="wrapper">
         <div className="container">
-          <Articles />
+          <Articles articles={articles} />
         </div>
       </div>
     </MainLayout>

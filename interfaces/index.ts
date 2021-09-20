@@ -5,7 +5,7 @@ export interface BooleanState {
   setIsNavOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-export interface Article {
+export interface ArticleDetail {
   title: string;
   description: string;
   content: string;
