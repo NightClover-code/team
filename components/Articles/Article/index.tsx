@@ -14,12 +14,7 @@ const Article: React.FC<ArticleProps> = ({ article }) => {
   return (
     <div className="blog__article">
       <div className="img__container">
-        <Image
-          src="https://res.cloudinary.com/achraf-dev/image/upload/v1630269985/hero_buymwb.jpg"
-          layout="fill"
-          objectFit="cover"
-          alt="random"
-        />
+        <Image src={image.url} layout="fill" objectFit="cover" alt="random" />
       </div>
       <div className="text__content">
         <h2>{title}</h2>
@@ -27,7 +22,7 @@ const Article: React.FC<ArticleProps> = ({ article }) => {
         <div className="author__content">
           <div className="avatar__container">
             <Image
-              src="https://res.cloudinary.com/achraf-dev/image/upload/v1630445340/jack-finnigan-rriAI0nhcbc-unsplash_jklbin.jpg"
+              src={avatar.url}
               layout="fill"
               alt="random"
               objectFit="cover"

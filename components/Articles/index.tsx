@@ -12,19 +12,19 @@ export interface ArticleProps {
 const Blog: React.FC<ArticleProps> = ({ articles }) => {
   return (
     <section className="blog__section">
-      <div className="blog__header">
+      <div className="blog__header" data-aos="fade-up">
         <h1>Blog</h1>
         <p>
           Our latest web design tricks, insights, and resources, hot of the
           presses.
         </p>
       </div>
-      <div className="blog__grid">
+      <div className="blog__grid" data-aos="fade-up" data-aos-delay="400">
         {articles.map(article => (
           <Article key={uuidv4()} article={article} />
         ))}
       </div>
-      <div className="custom__button">
+      <div className="custom__button" data-aos="fade-up">
         <button>
           Next
           <ChevronRightIcon />
