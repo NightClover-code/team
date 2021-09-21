@@ -9,10 +9,15 @@ import Footer from '../components/Footer';
 
 interface MainLayoutInterface {
   NavBar: React.FC;
+  backgroundColor?: string;
 }
 
 //main layout
-const MainLayout: React.FC<MainLayoutInterface> = ({ children, NavBar }) => {
+const MainLayout: React.FC<MainLayoutInterface> = ({
+  children,
+  NavBar,
+  backgroundColor,
+}) => {
   const { isNavOpen, setIsNavOpen } = useContext(NavContext);
 
   useEffect(() => {
@@ -24,7 +29,7 @@ const MainLayout: React.FC<MainLayoutInterface> = ({ children, NavBar }) => {
   }, [isNavOpen]);
 
   return (
-    <div className="app__container">
+    <div className="app__container" style={{ backgroundColor }}>
       <Header>
         <NavBar />
       </Header>

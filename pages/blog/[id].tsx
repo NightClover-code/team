@@ -10,7 +10,7 @@ import ArticleDetail from '../../components/ArticleDetail';
 //TODO change seo config
 const BlogDetailPage: NextPage = () => {
   return (
-    <MainLayout NavBar={BlogNavBar}>
+    <MainLayout NavBar={BlogNavBar} backgroundColor="#ffffff">
       <SEO {...blogSeoConfig} />
       <main className="wrapper">
         <div className="container">
