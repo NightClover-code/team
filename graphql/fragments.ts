@@ -2,10 +2,28 @@
 import { gql } from '@apollo/client';
 
 //fragments
-export const articleDetailFragment = gql`
-  fragment ArticleDetail on Article {
+export const articlesFragment = gql`
+  fragment ArticlesDetail on Article {
     title
     description
+    image {
+      url
+    }
+    slug
+    author {
+      name
+      publishDate
+      avatar {
+        url
+      }
+      slug
+    }
+  }
+`;
+
+export const articleFragment = gql`
+  fragment ArticleDetail on Article {
+    title
     content
     image {
       url

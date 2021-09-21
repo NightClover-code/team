@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import { AuthorDetail } from '../../interfaces';
+import { AuthorInterface } from '../../interfaces';
 
 interface AuthorProps {
-  author: AuthorDetail;
+  author: AuthorInterface;
 }
 
 const Author: React.FC<AuthorProps> = ({ author }) => {

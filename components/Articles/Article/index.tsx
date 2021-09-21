@@ -1,12 +1,12 @@
 //importing types
-import { ArticleDetail } from '../../../interfaces';
+import { ArticleInterface } from '../../../interfaces';
 //importing components
 import Image from 'next/image';
 import Link from 'next/link';
 import Author from '../../Author';
 
 interface ArticleProps {
-  article: ArticleDetail;
+  article: ArticleInterface;
 }
 
 const Article: React.FC<ArticleProps> = ({ article }) => {

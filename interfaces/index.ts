@@ -5,7 +5,7 @@ export interface BooleanState {
   setIsNavOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-export interface ArticleDetail {
+export interface ArticleInterface {
   title: string;
   description: string;
   content: string;
@@ -13,10 +13,10 @@ export interface ArticleDetail {
     url: string;
   };
   slug: string;
-  author: AuthorDetail;
+  author: AuthorInterface;
 }
 
-export interface AuthorDetail {
+export interface AuthorInterface {
   name: string;
   description?: string;
   publishDate: string;

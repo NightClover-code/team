@@ -1,12 +1,12 @@
 //importing types & utils
-import { ArticleDetail } from '../../interfaces';
+import { ArticleInterface } from '../../interfaces';
 import { v4 as uuidv4 } from 'uuid';
 //importing components
 import { ChevronRightIcon } from '../Icons';
 import Article from './Article';
 
 export interface ArticleProps {
-  articles: ArticleDetail[];
+  articles: ArticleInterface[];
 }
 
 const Blog: React.FC<ArticleProps> = ({ articles }) => {
