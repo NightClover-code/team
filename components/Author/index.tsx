@@ -9,7 +9,7 @@ const Author: React.FC<AuthorProps> = ({ author }) => {
   const { avatar, name, publishDate } = author;
 
   return (
-    <div className="author__content">
+    <div className="blog__avatar__content">
       <div className="avatar__container">
         <Image src={avatar.url} layout="fill" alt="random" objectFit="cover" />
       </div>

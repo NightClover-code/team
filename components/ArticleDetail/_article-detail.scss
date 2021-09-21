@@ -1,7 +1,30 @@
 .article__detail {
-  h1 {
-    color: var(--dark-blue);
+  .article__detail__header {
     max-width: 700px;
     margin: 200px auto 30px auto;
+    h1 {
+      color: var(--dark-blue);
+    }
+    .blog__avatar__content {
+      .avatar__container {
+        width: 40px;
+        height: 40px;
+      }
+      .author__info {
+        span {
+          font-size: 15px;
+        }
+        .vertical__line {
+          margin: 2px 20px;
+        }
+      }
+    }
+  }
+  .img__container {
+    position: relative;
+    width: 900px;
+    height: 614px;
+    margin: auto;
+    margin-top: 60px;
   }
 }

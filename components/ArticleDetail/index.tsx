@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Author from '../Author';
 
 const ArticleDetail = () => {
@@ -13,8 +14,18 @@ const ArticleDetail = () => {
 
   return (
     <section className="article__detail">
-      <h1>10 secrets for managing a remote team</h1>
-      <Author author={author} />
+      <div className="article__detail__header">
+        <h1>10 secrets for managing a remote team</h1>
+        <Author author={author} />
+      </div>
+      <div className="img__container">
+        <Image
+          src="https://media.graphcms.com/C5mAVqJRnWMCT336RzsC"
+          layout="fill"
+          objectFit="cover"
+          alt="random"
+        />
+      </div>
     </section>
   );
 };
