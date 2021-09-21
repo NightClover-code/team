@@ -24,7 +24,9 @@ export const articlesFragment = gql`
 export const articleFragment = gql`
   fragment ArticleDetail on Article {
     title
-    content
+    content {
+      raw
+    }
     image {
       url
     }

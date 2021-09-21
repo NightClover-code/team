@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Author from '../Author';
+import { RichText } from '@graphcms/rich-text-react-renderer';
 import { ArticleInterface } from '../../interfaces';
 
 interface ArticleDetailProps {
@@ -8,6 +9,8 @@ interface ArticleDetailProps {
 
 const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
   const { image, content, author, title } = article;
+
+  console.log(content);
 
   return (
     <section className="article__detail">
@@ -20,7 +23,9 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
           <Image src={image.url} layout="fill" alt="random" />
         </div>
         <div className="article__body__container">
-          <div className="content">{content}</div>
+          <div className="content">
+            <RichText content={content.raw.children} />
+          </div>
           <div className="author__container">
             <div className="avatar__container">
               <Image

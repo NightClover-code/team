@@ -8,7 +8,7 @@ export interface BooleanState {
 export interface ArticleInterface {
   title: string;
   description: string;
-  content: string;
+  content: any;
   image: {
     url: string;
   };
