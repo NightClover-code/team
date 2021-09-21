@@ -1,21 +1,19 @@
 //importing types & utils
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { ArticleInterface } from '../../interfaces';
+import { articleQuery, articlesQuery } from '../../graphql';
 import { blogSeoConfig, client } from '../../utils';
 //importing components
 import BlogNavBar from '../../components/Header/BlogNavBar';
 import MainLayout from '../../layouts/MainLayout';
 import SEO from '../../components/SEO';
 import ArticleDetail from '../../components/ArticleDetail';
-import { articleQuery, articlesQuery } from '../../graphql';
-import { ArticleInterface } from '../../interfaces';
 
 interface BlogDetailPageProps {
   article: ArticleInterface;
 }
 
 const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ article }) => {
-  console.log(article);
-
   const layoutConfig = {
     NavBar: BlogNavBar,
     backgroundColor: '#ffffff',
@@ -26,7 +24,7 @@ const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ article }) => {
       <SEO {...blogSeoConfig} />
       <main className="wrapper">
         <div className="container">
-          <ArticleDetail />
+          <ArticleDetail article={article} />
         </div>
       </main>
     </MainLayout>

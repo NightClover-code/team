@@ -10,10 +10,10 @@ interface ArticleProps {
 }
 
 const Article: React.FC<ArticleProps> = ({ article }) => {
-  const { title, description, image } = article;
+  const { title, description, image, slug } = article;
 
   return (
-    <Link href="/blog/56" passHref>
+    <Link href={`/blog/${slug}`} passHref>
       <div className="blog__article">
         <div className="img__container">
           <Image src={image.url} layout="fill" objectFit="cover" alt="random" />
