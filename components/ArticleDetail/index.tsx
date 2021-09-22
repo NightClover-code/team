@@ -1,7 +1,9 @@
+//importing types
+import { ArticleInterface } from '../../interfaces';
+//importing components
 import Image from 'next/image';
 import Author from '../Author';
 import { RichText } from '@graphcms/rich-text-react-renderer';
-import { ArticleInterface } from '../../interfaces';
 
 interface ArticleDetailProps {
   article: ArticleInterface;
@@ -9,8 +11,6 @@ interface ArticleDetailProps {
 
 const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
   const { image, content, author, title } = article;
-
-  console.log(content);
 
   return (
     <section className="article__detail">

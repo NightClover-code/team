@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/css/default.css';
 //importing components, utils & types
-import type { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import { NavProvider } from '../context';
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -1,3 +1,4 @@
+//importing components & types
 import Image from 'next/image';
 import { AuthorInterface } from '../../interfaces';
 
