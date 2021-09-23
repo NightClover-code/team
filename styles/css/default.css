@@ -1169,6 +1169,10 @@ ul .title:hover {
   line-height: 30px;
 }
 
+.article__detail .article__detail__body .article__body__container .comment__section {
+  margin-top: 100px;
+}
+
 .article__detail .article__detail__body .article__body__container .author__container {
   margin-top: 100px;
   display: -webkit-box;

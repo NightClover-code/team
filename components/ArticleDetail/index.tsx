@@ -4,13 +4,20 @@ import { ArticleInterface } from '../../interfaces';
 import Image from 'next/image';
 import Author from '../Author';
 import { RichText } from '@graphcms/rich-text-react-renderer';
+import Disqus from 'disqus-react';
 
 interface ArticleDetailProps {
   article: ArticleInterface;
 }
 
 const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
-  const { image, content, author, title } = article;
+  const { image, content, author, title, slug } = article;
+  const disqusShortname = 'team-8';
+  const disqusConfig = {
+    url: 'http://localhost:3000',
+    identifier: slug,
+    title,
+  };
 
   return (
     <section className="article__detail">
@@ -40,6 +47,12 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
               <h4>{author.name}</h4>
               <p>{author.description}</p>
             </div>
+          </div>
+          <div className="comment__section">
+            <Disqus.DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
           </div>
         </div>
       </div>
