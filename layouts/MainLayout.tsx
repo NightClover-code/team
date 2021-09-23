@@ -1,5 +1,5 @@
 //importing hooks & context
-import { useContext, useEffect } from 'react';
+import { CSSProperties, useContext, useEffect } from 'react';
 import { NavContext } from '../context';
 //importing utils & types
 import { disableScroll, hideNav } from '../utils';
@@ -8,15 +8,15 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 interface MainLayoutInterface {
-  NavBar: React.FC;
-  backgroundColor?: string;
+  NavBar: React.FC<any>;
+  mainLayoutStyle?: CSSProperties;
 }
 
 //main layout
 const MainLayout: React.FC<MainLayoutInterface> = ({
   children,
   NavBar,
-  backgroundColor,
+  mainLayoutStyle,
 }) => {
   const { isNavOpen, setIsNavOpen } = useContext(NavContext);
 
@@ -29,7 +29,7 @@ const MainLayout: React.FC<MainLayoutInterface> = ({
   }, [isNavOpen]);
 
   return (
-    <div className="app__container" style={{ backgroundColor }}>
+    <div className="app__container" style={mainLayoutStyle}>
       <Header>
         <NavBar />
       </Header>

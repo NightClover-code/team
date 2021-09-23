@@ -16,7 +16,8 @@ interface BlogDetailPageProps {
 const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ article }) => {
   const layoutConfig = {
     NavBar: BlogNavBar,
-    backgroundColor: '#ffffff',
+    mainLayoutStyle: { backgroundColor: '#ffffff' },
+    buttonStyle: { backgroundColor: 'var(--off-white)' },
   };
 
   return (
