@@ -23,3 +23,10 @@ export const heroInputConfig = {
   height: '100%',
   padding: '0 15px',
 };
+
+export const layoutConfig = (BlogNavBar: React.FC) => ({
+  NavBar: BlogNavBar,
+  mainLayoutStyle: { backgroundColor: '#ffffff' },
+  buttonStyle: { backgroundColor: 'var(--off-white)' },
+  footerStyle: { marginTop: '10px' },
+});

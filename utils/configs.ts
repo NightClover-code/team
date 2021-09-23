@@ -14,3 +14,12 @@ export const blogSeoConfig = {
   description:
     "Read about people's experiences and gain knowledge along the way.",
 };
+
+export const disqusConfig = (slug: string, title: string) => ({
+  shortname: 'team-8',
+  config: {
+    url: 'http://localhost:3000',
+    identifier: slug,
+    title,
+  },
+});

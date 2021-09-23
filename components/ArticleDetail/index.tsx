@@ -1,4 +1,5 @@
-//importing types
+//importing types & utils
+import { disqusConfig } from '../../utils';
 import { ArticleInterface } from '../../interfaces';
 //importing components
 import Image from 'next/image';
@@ -12,12 +13,6 @@ interface ArticleDetailProps {
 
 const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
   const { image, content, author, title, slug } = article;
-  const disqusShortname = 'team-8';
-  const disqusConfig = {
-    url: 'http://localhost:3000',
-    identifier: slug,
-    title,
-  };
 
   return (
     <section className="article__detail">
@@ -49,10 +44,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
             </div>
           </div>
           <div className="comment__section">
-            <Disqus.DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            />
+            <Disqus.DiscussionEmbed {...disqusConfig(slug, title)} />
           </div>
         </div>
       </div>
