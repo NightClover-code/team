@@ -20,7 +20,9 @@ const NavBar = () => {
             <li className="products">Products</li>
             <li>Services</li>
             <Link href="/blog" passHref>
-              <li className="special">Blog</li>
+              <li className="special" onClick={() => setIsNavOpen(false)}>
+                Blog
+              </li>
             </Link>
             <li>Login</li>
           </ul>
