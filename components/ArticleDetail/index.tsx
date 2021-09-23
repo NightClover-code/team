@@ -12,7 +12,7 @@ interface ArticleDetailProps {
 }
 
 const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
-  const { image, content, author, title, slug } = article;
+  const { image, content, author, title } = article;
 
   return (
     <section className="article__detail">
@@ -44,7 +44,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
             </div>
           </div>
           <div className="comment__section">
-            <Disqus.DiscussionEmbed {...disqusConfig(slug, title)} />
+            <Disqus.DiscussionEmbed {...disqusConfig(article)} />
           </div>
         </div>
       </div>

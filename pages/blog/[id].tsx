@@ -2,7 +2,7 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { ArticleInterface } from '../../interfaces';
 import { articleQuery, articlesQuery } from '../../graphql';
-import { blogSeoConfig, client, layoutConfig } from '../../utils';
+import { blogDetailSeoConfig, client, layoutConfig } from '../../utils';
 //importing components
 import BlogNavBar from '../../components/Header/BlogNavBar';
 import MainLayout from '../../layouts/MainLayout';
@@ -16,7 +16,7 @@ interface BlogDetailPageProps {
 const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ article }) => {
   return (
     <MainLayout {...layoutConfig(BlogNavBar)}>
-      <SEO {...blogSeoConfig} />
+      <SEO {...blogDetailSeoConfig(article)} />
       <main className="wrapper">
         <div className="container">
           <ArticleDetail article={article} />

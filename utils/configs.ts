@@ -1,3 +1,5 @@
+import { ArticleInterface } from '../interfaces';
+
 export const arrowForwardConfig = {
   width: '30',
   height: '35',
@@ -15,11 +17,27 @@ export const blogSeoConfig = {
     "Read about people's experiences and gain knowledge along the way.",
 };
 
-export const disqusConfig = (slug: string, title: string) => ({
-  shortname: 'team-8',
-  config: {
-    url: 'http://localhost:3000',
-    identifier: slug,
+export const disqusConfig = (article: ArticleInterface) => {
+  const { slug, title } = article;
+
+  return {
+    shortname: 'team-8',
+    config: {
+      url: 'http://localhost:3000',
+      identifier: slug,
+      title,
+    },
+  };
+};
+
+export const blogDetailSeoConfig = (article: ArticleInterface) => {
+  const {
     title,
-  },
-});
+    description,
+    author: { name },
+  } = article;
+  return {
+    title: `${title} - by ${name}`,
+    description,
+  };
+};
