@@ -16,19 +16,19 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
 
   return (
     <section className="article__detail">
-      <div className="article__detail__header">
+      <div className="article__detail__header" data-aos="fade-up">
         <h1>{title}</h1>
         <Author author={author} />
       </div>
       <div className="article__detail__body">
-        <div className="img__container">
+        <div className="img__container" data-aos-delay="200" data-aos="fade-up">
           <Image src={image.url} layout="fill" alt="random" />
         </div>
         <div className="article__body__container">
-          <div className="content">
+          <div className="content" data-aos="fade-up">
             <RichText content={content.raw.children} />
           </div>
-          <div className="author__container">
+          <div className="author__container" data-aos="fade-up">
             <div className="avatar__container">
               <Image
                 src={author.avatar.url}
@@ -43,7 +43,11 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
               <p>{author.description}</p>
             </div>
           </div>
-          <div className="comment__section">
+          <div
+            className="comment__section"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <Disqus.DiscussionEmbed {...disqusConfig(article)} />
           </div>
         </div>
