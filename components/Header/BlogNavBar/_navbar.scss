@@ -21,4 +21,7 @@
     color: white;
     border-color: var(--dark-blue);
   }
+  @media screen and (max-width: 850px) {
+    margin-left: 0px;
+  }
 }

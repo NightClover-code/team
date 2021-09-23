@@ -963,6 +963,12 @@ ul .title:hover {
   border-color: var(--dark-blue);
 }
 
+@media screen and (max-width: 850px) {
+  .secondary__button {
+    margin-left: 0px;
+  }
+}
+
 .blog__section {
   margin-top: 180px;
 }
@@ -1068,6 +1074,12 @@ ul .title:hover {
   margin: 200px auto 30px auto;
 }
 
+@media screen and (max-width: 500px) {
+  .article__detail .article__detail__header {
+    margin-top: 150px;
+  }
+}
+
 .article__detail .article__detail__header h1 {
   color: var(--dark-blue);
 }
@@ -1093,9 +1105,57 @@ ul .title:hover {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 1000px) {
+  .article__detail .article__detail__body .img__container {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .article__detail .article__detail__body .img__container {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .article__detail .article__detail__body .img__container {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .article__detail .article__detail__body .img__container {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .article__detail .article__detail__body .img__container {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .article__detail .article__detail__body .img__container {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .article__detail .article__detail__body .img__container {
+    height: 150px;
+  }
+}
+
 .article__detail .article__detail__body .article__body__container {
   margin: 100px auto;
   max-width: 700px;
+}
+
+@media screen and (max-width: 600px) {
+  .article__detail .article__detail__body .article__body__container {
+    margin-top: 50px;
+  }
 }
 
 .article__detail .article__detail__body .article__body__container .content {
@@ -1116,6 +1176,12 @@ ul .title:hover {
   display: flex;
 }
 
+@media screen and (max-width: 500px) {
+  .article__detail .article__detail__body .article__body__container .author__container {
+    margin-top: 50px;
+  }
+}
+
 .article__detail .article__detail__body .article__body__container .author__container .avatar__container {
   position: relative;
   width: 55px;
@@ -1126,6 +1192,12 @@ ul .title:hover {
 
 .article__detail .article__detail__body .article__body__container .author__container .author__content {
   margin-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .article__detail .article__detail__body .article__body__container .author__container .author__content {
+    margin-left: 20px;
+  }
 }
 
 .article__detail .article__detail__body .article__body__container .author__container .author__content span {
@@ -1153,6 +1225,18 @@ ul .title:hover {
   max-width: 300px;
   line-height: 24px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .article__detail .article__detail__body .article__body__container .author__container .author__content p {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .article__detail .article__detail__body .article__body__container .author__container .author__content p {
+    max-width: 150px;
+  }
 }
 
 .blog__avatar__content {
