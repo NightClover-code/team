@@ -23,7 +23,7 @@ export const disqusConfig = (article: ArticleInterface) => {
   return {
     shortname: 'team-8',
     config: {
-      url: process.env.NEXT_PUBLIC_WEBSITE_URL || 'http://localhost:3000',
+      url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/blog/${slug}`,
       identifier: slug,
       title,
     },
