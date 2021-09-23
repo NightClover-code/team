@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 interface MainLayoutInterface {
   NavBar: React.FC<any>;
   mainLayoutStyle?: CSSProperties;
+  footerStyle?: CSSProperties;
 }
 
 //main layout
@@ -17,6 +18,7 @@ const MainLayout: React.FC<MainLayoutInterface> = ({
   children,
   NavBar,
   mainLayoutStyle,
+  footerStyle,
 }) => {
   const { isNavOpen, setIsNavOpen } = useContext(NavContext);
 
@@ -34,7 +36,7 @@ const MainLayout: React.FC<MainLayoutInterface> = ({
         <NavBar />
       </Header>
       {children}
-      <Footer />
+      <Footer style={footerStyle} />
     </div>
   );
 };

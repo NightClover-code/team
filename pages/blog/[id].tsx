@@ -18,6 +18,7 @@ const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ article }) => {
     NavBar: BlogNavBar,
     mainLayoutStyle: { backgroundColor: '#ffffff' },
     buttonStyle: { backgroundColor: 'var(--off-white)' },
+    footerStyle: { marginTop: '10px' },
   };
 
   return (

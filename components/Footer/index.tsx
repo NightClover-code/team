@@ -4,10 +4,15 @@ import { arrowForwardConfig, newsletterInputConfig } from '../../utils';
 import FormInput from '../Forms/Input';
 import Logo from '../Logo';
 import { ArrowForwardIcon } from '../Icons';
+import { CSSProperties } from 'react';
 
-const Footer = () => {
+interface FooterProps {
+  style?: CSSProperties;
+}
+
+const Footer: React.FC<FooterProps> = ({ style }) => {
   return (
-    <footer>
+    <footer style={style}>
       <div className="container">
         <div className="flex__1">
           <div className="flex__2">
