@@ -46,11 +46,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const {
-    data: { articles },
-  } = await client.query({
+  const { data } = await client.query({
     query: articlesQuery,
+    variables: { limit: 9, offset: 0 },
   });
+
+  const articles = data.articlesConnection.articles.map(
+    (article: any) => article.node
+  );
 
   const paths = articles.map((article: ArticleInterface) => ({
     params: { id: article.slug },

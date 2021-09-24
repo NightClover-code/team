@@ -1,5 +1,3 @@
-//importing hooks
-import { useRouter } from 'next/router';
 //importing types & utils
 import { GetStaticProps, NextPage } from 'next';
 import { ArticleInterface } from '../../interfaces';
@@ -16,8 +14,6 @@ interface BlogPageProps {
 }
 
 const BlogPage: NextPage<BlogPageProps> = ({ articles }) => {
-  const router = useRouter();
-
   return (
     <MainLayout NavBar={BlogNavBar}>
       <SEO {...blogSeoConfig} />
@@ -32,7 +28,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ articles }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   //fetching articles
-  const limit = 3;
+  const limit = 9;
 
   const { data } = await client.query({
     query: articlesQuery,
