@@ -11,6 +11,10 @@ export const articlesQuery = gql`
           ...ArticlesDetail
         }
       }
+      pageInfo {
+        hasNextPage
+        hasNextPage
+      }
     }
   }
   ${articlesFragment}

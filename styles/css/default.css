@@ -987,6 +987,19 @@ ul .title:hover {
   gap: 60px 30px;
 }
 
+.blog__section .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
 .blog__section .custom__button {
   position: relative;
   display: -webkit-box;
@@ -1002,6 +1015,8 @@ ul .title:hover {
 .blog__section .custom__button button {
   color: var(--black);
   font-size: 16px;
+  width: 120px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1012,7 +1027,6 @@ ul .title:hover {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 4px;
-  padding: 15px 30px;
   background-color: rgba(203, 209, 217, 0.5);
   font-weight: normal;
 }
@@ -1031,6 +1045,11 @@ ul .title:hover {
 .blog__section .custom__button button:hover svg {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
+}
+
+.blog__section .previous__button:hover svg {
+  -webkit-transform: translateX(-5px) !important;
+          transform: translateX(-5px) !important;
 }
 
 .blog__article {
