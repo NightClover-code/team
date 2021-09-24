@@ -19,9 +19,13 @@ const Article: React.FC<ArticleProps> = ({ article }) => {
           <Image src={image.url} layout="fill" objectFit="cover" alt="random" />
         </div>
         <div className="text__content">
-          <h2>{title}</h2>
-          <p>{description}</p>
-          <Author author={article.author} />
+          <div className="text__info">
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </div>
+          <div className="author">
+            <Author author={article.author} />
+          </div>
         </div>
       </div>
     </Link>

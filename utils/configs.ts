@@ -36,6 +36,7 @@ export const blogDetailSeoConfig = (article: ArticleInterface) => {
     description,
     author: { name },
   } = article;
+  
   return {
     title: `${title} - by ${name}`,
     description,

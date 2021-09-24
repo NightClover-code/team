@@ -21,6 +21,7 @@ const Hero = () => {
               className="newsletter__form"
               data-aos="fade-up"
               data-aos-delay="800"
+              onSubmit={e => e.preventDefault()}
             >
               <FormInput style={heroInputConfig} />
               <button className="primary__button">Get Early Access</button>

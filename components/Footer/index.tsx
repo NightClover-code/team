@@ -48,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({ style }) => {
               <li className="footer__link special">
                 Subscribe to our newsletter
               </li>
-              <form>
+              <form onSubmit={e => e.preventDefault()}>
                 <FormInput style={newsletterInputConfig}>
                   <ArrowForwardIcon {...arrowForwardConfig} />
                 </FormInput>
