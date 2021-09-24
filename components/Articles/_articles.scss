@@ -11,25 +11,28 @@
     gap: 60px 30px;
   }
   .custom__button {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 70px;
     margin-bottom: 100px;
     button {
-      color: rgba(33, 55, 87, 0.7);
-      font-size: 18px;
+      color: var(--black);
+      font-size: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      padding: 15px 60px;
-      background-color: rgba(33, 55, 87, 0.1);
+      gap: 4px;
+      padding: 15px 30px;
+      background-color: rgba(203, 209, 217, 0.5);
+      font-weight: normal;
       svg {
         margin-top: 1px;
+        width: 15px;
         transition: all 0.2s ease-in-out;
       }
       &:hover {
-        opacity: 0.8;
+        background-color: rgba(203, 209, 217, 0.8);
         svg {
           transform: translateX(5px);
         }

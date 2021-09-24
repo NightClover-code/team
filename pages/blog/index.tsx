@@ -28,11 +28,14 @@ const BlogPage: NextPage<BlogPageProps> = ({ articles }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   //fetching articles
-  const {
-    data: { articles },
-  } = await client.query({
+  const { data } = await client.query({
     query: articlesQuery,
+    variables: { limit: 3, offset: 0 },
   });
+
+  const articles = data.articlesConnection.articles.map(
+    (article: any) => article.node
+  );
 
   return {
     props: {

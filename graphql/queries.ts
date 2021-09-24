@@ -4,9 +4,13 @@ import { articleFragment, articlesFragment } from '.';
 
 //queries
 export const articlesQuery = gql`
-  query ArticlesQuery {
-    articles {
-      ...ArticlesDetail
+  query ArticlesQuery($limit: Int!, $offset: Int!) {
+    articlesConnection(first: $limit, skip: $offset) {
+      articles: edges {
+        node {
+          ...ArticlesDetail
+        }
+      }
     }
   }
   ${articlesFragment}
