@@ -6,7 +6,7 @@
 
 I wanted to build a JAMStack website using some modern technologies for the blog content, this was the challenge:
 
-- View the optimal layout for each page depending on their device's screen size
+- View the optimal layout for each page depending on the device's screen size
 - Users can see popular blogs on the blog page
 - Users can read the detailed blog when clicking on it
 - Ability to comment using disqus provider
