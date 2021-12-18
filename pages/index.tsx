@@ -1,6 +1,8 @@
 //importing types & utils
-import { seoConfig } from '../utils';
-import { NextPage } from 'next';
+import { client, seoConfig } from '../utils';
+import { GetStaticProps, NextPage } from 'next';
+import { HeroInterface } from '../interfaces';
+import { heroesQuery } from '../graphql';
 //importing components
 import Advantages from '../components/Advantages';
 import DashBoard from '../components/Dashboard';
@@ -10,18 +12,36 @@ import Testimonials from '../components/Testimonials';
 import MainLayout from '../layouts/MainLayout';
 import NavBar from '../components/Header/NavBar';
 
-const HomePage: NextPage = () => {
+interface HomePageProps {
+  hero: HeroInterface;
+}
+
+const HomePage: NextPage<HomePageProps> = ({ hero }) => {
   return (
     <MainLayout NavBar={NavBar}>
       <SEO {...seoConfig} />
       <main className="wrapper">
-        <Hero />
+        <Hero hero={hero} />
         <DashBoard />
         <Advantages />
         <Testimonials />
       </main>
     </MainLayout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await client.query({
+    query: heroesQuery,
+  });
+
+  const hero = data.heroes.map((hero: any) => hero)[0];
+
+  return {
+    props: {
+      hero,
+    },
+  };
 };
 
 export default HomePage;

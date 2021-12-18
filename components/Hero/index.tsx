@@ -1,8 +1,13 @@
-//importing utils
+//importing types & utils
 import FormInput from '../Forms/Input';
 import { heroInputConfig } from '../../utils';
+import { HeroInterface } from '../../interfaces';
 
-const Hero = () => {
+interface HeroProps {
+  hero: HeroInterface;
+}
+
+const Hero: React.FC<HeroProps> = ({ hero: { title, description } }) => {
   return (
     <section className="hero__section">
       <div className="hero__overlay">
@@ -12,11 +17,8 @@ const Hero = () => {
             data-aos="fade-right"
             data-aos-delay="600"
           >
-            <h1>Instant collaboration for remote teams</h1>
-            <p>
-              The easiest and fastest way to share work with groups and to
-              simplify project management.
-            </p>
+            <h1>{title}</h1>
+            <p>{description}</p>
             <form
               className="newsletter__form"
               data-aos="fade-up"

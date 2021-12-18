@@ -28,3 +28,12 @@ export const articleQuery = gql`
   }
   ${articleFragment}
 `;
+
+export const heroesQuery = gql`
+  query HeroesQuery {
+    heroes {
+      title
+      description
+    }
+  }
+`;

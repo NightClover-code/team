@@ -5,6 +5,11 @@ export interface BooleanState {
   setIsNavOpen: Dispatch<SetStateAction<boolean>>;
 }
 
+export interface HeroInterface {
+  title: string;
+  description: string;
+}
+
 export interface ArticleInterface {
   title: string;
   description: string;
