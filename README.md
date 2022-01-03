@@ -2,7 +2,7 @@
 
 ![Team design preview image](./public/design/team-design.png)
 
-## The Challenge
+## The Challenge⚡️
 
 I wanted to build a JAMStack website using some modern technologies for the blog content, this was the challenge:
 
@@ -12,7 +12,7 @@ I wanted to build a JAMStack website using some modern technologies for the blog
 - Implementing a responsive testimonials slider
 - Ability to comment using disqus provider
 
-## Built With
+## Built With ✨
 
 - Apollo-client & GraphQL
 - GraphCMS - Headless CMS
