@@ -5,6 +5,12 @@
   margin: auto;
 }
 
+@media screen and (min-width: 1700px) {
+  .container {
+    width: 60%;
+  }
+}
+
 h1 {
   font-family: 'Merriweather', sans-serif;
   color: white;

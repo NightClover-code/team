@@ -2,6 +2,9 @@
   width: 80%;
   overflow: hidden;
   margin: auto;
+  @media screen and (min-width: 1700px) {
+    width: 60%;
+  }
 }
 
 h1 {
