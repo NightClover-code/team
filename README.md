@@ -2,7 +2,7 @@
 
 ![Team design preview image](./public/design/team-design.png)
 
-## The Challenge⚡️
+## The Challenge ⚡️
 
 I wanted to build a JAMStack website using some modern technologies for the blog content. 
 
